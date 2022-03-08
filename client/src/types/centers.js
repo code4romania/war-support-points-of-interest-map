@@ -1,14 +1,11 @@
-import { arrayOf, bool, number, shape, string } from 'prop-types';
+import { arrayOf, bool, number, oneOfType, shape, string } from 'prop-types';
 
 export const CenterDetailsTitleType = {
   countyCode: string,
-  lat: string,
-  lng: string,
+  lat: oneOfType([string, number]),
+  lng: oneOfType([string, number]),
   locality: string,
-  streetName: string.isRequired,
-  streetNumber: string,
-  averageRating: number,
-  totalRatings: number,
+  address: string.isRequired,
 };
 
 export const CenterDetailsType = {

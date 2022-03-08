@@ -3,6 +3,9 @@ import { useMap, useSelectedCenterPk } from '../../store';
 import ClusterLayerBuilder from './ClusterLayerBuilder';
 import { useClearSelectedMarkers } from './useClearSelectedMarkers';
 import { useZoomToMarker } from './useZoomToMarker';
+import { DEFAULT_MAP_OPTIONS } from '../../constants';
+
+const { mapBounds } = DEFAULT_MAP_OPTIONS;
 
 export const useCreateMapClusters = () => {
   const { map } = useMap();
@@ -39,6 +42,16 @@ export const useCreateMapClusters = () => {
   return useCallback(
     (points) => {
       if (!map) return;
+
+      const markers = map
+        .getLayers()
+        .asArray()
+        .filter((layer) => layer.getProvider().providesDomMarkers())
+        .map((layer) => layer.getProvider().requestDomMarkers(mapBounds, 20))
+        .flat()
+        .filter((marker) => marker.getData());
+
+      if (markers.length > 0) return;
 
       map.addLayer(ClusterLayerBuilder.buildClusterLayer(points, onClusterClick, onMarkerClick));
     },

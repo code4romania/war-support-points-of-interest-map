@@ -13,6 +13,7 @@
   height: 38px;
   margin: -38px 0px 0px -16px;
   width: 32px;
+  cursor: pointer;
 }
 
 .user-pin-icon {
@@ -24,10 +25,9 @@
 .center-icon {
   @extend %icon-base;
 
-  color: #cc80ae;
-  cursor: pointer;
+  color: $primary-color;
 
   &.selected {
-    color: $primary-color;
+    color: $primary-dark;
   }
 }
