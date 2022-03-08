@@ -1,6 +1,6 @@
 {
   "404.contact_message": {
-    "translation": "If you encounter other issues, please send us an e-mail at ",
+    "translation": "",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -10,7 +10,7 @@
     "extractedComments": []
   },
   "404.sorry_message": {
-    "translation": "We can not find the page you are looking for. Please go back to the main page and start your search again or navigate through the rest of our platform with the help of the top menu.",
+    "translation": "",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -20,7 +20,7 @@
     "extractedComments": []
   },
   "404.title": {
-    "translation": "We are sorry",
+    "translation": "",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -30,7 +30,7 @@
     "extractedComments": []
   },
   "A Code for Romania solution.": {
-    "translation": "A Code for Romania solution.",
+    "translation": "Решение Кода Для Румынии.",
     "origin": [
       [
         "components/Footer/index.js",
@@ -40,7 +40,7 @@
     "extractedComments": []
   },
   "A Code for Romania solution. <0>Find out more.</0>": {
-    "translation": "A Code for Romania solution. <0>Find out more.</0>",
+    "translation": "Решение Кода Для Румынии. <0>Подробнее.</0>",
     "origin": [
       [
         "components/Header/index.js",
@@ -50,6 +50,7 @@
     "extractedComments": []
   },
   "About the project": {
+    "translation": "О проекте",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -59,6 +60,7 @@
     "extractedComments": []
   },
   "Back to home page": {
+    "translation": "Вернуться на главную страницу",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -68,7 +70,7 @@
     "extractedComments": []
   },
   "Call center": {
-    "translation": "Call center",
+    "translation": "",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -78,7 +80,7 @@
     "extractedComments": []
   },
   "If you’d like to report any mistakes, inconsistencies or omissions please let us know by writing an e-mail to contact@code4.ro. We’ll do our best to integrate your feedback.": {
-    "translation": "If you’d like to report any mistakes, inconsistencies or omissions please let us know by writing an e-mail to contact@code4.ro. We’ll do our best to integrate your feedback.",
+    "translation": "Если вы хотите сообщить о каких-либо ошибках, несоответствиях или упущениях, сообщите нам об этом по электронной почте contact@code4.ro. Мы сделаем все возможное, чтобы интегрировать ваши отзывы.",
     "origin": [
       [
         "components/Footer/index.js",
@@ -88,6 +90,7 @@
     "extractedComments": []
   },
   "Information missing": {
+    "translation": "Информация отсутствует",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -97,7 +100,7 @@
     "extractedComments": []
   },
   "Map loading…": {
-    "translation": "Map loading…",
+    "translation": "Загрузка картыloading…",
     "origin": [
       [
         "components/MapPlaceholder/index.js",
@@ -107,7 +110,7 @@
     "extractedComments": []
   },
   "Name": {
-    "translation": "Name",
+    "translation": "имя",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -117,7 +120,7 @@
     "extractedComments": []
   },
   "Phone number missing": {
-    "translation": "Phone number missing",
+    "translation": "Номер телефона отсутствует",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -127,6 +130,7 @@
     "extractedComments": []
   },
   "Welcome!": {
+    "translation": "Добро пожаловать!",
     "origin": [
       [
         "containers/home/HeroFragment.js",
@@ -136,7 +140,7 @@
     "extractedComments": []
   },
   "see how to get there": {
-    "translation": "see how to get there",
+    "translation": "посмотри как добраться",
     "origin": [
       [
         "components/CenterDetailsTitle/index.js",
