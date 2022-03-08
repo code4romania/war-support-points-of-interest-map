@@ -4,6 +4,10 @@ name: CD-prod
 on:
   push:
     branches: [ main ]
+    
+defaults:
+  run:
+    working-directory: client  
 
 jobs:
   build:
@@ -15,10 +19,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci
-        working-directory: client
-      - run: npm run build
-        working-directory: client
+      - run: npm ci       
+      - run: npm run build        
       
       - uses: aws-actions/configure-aws-credentials@v1
         with:
