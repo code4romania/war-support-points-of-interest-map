@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Dropdown, Layout, Menu } from 'antd';
-import { DownOutlined, GlobalOutlined, MenuOutlined } from '@ant-design/icons';
+import { Button, Dropdown, Layout, Menu, Typography } from 'antd';
+import { DownOutlined, GlobalOutlined } from '@ant-design/icons';
+import { Trans } from '@lingui/macro';
 import logo from '../../logo.svg';
-
 import { useGlobalContext } from '../../context';
-import { HeaderMenu } from '../HeaderMenu';
-import { useMenuItems } from '../../hooks';
+import CfR from '../../images/footer_CfR.svg';
 
 const { Header: AntHeader } = Layout;
+const { Text } = Typography;
 
 const LANGUAGES = {
-  en: 'English',
+  uk: 'Українська',
   ro: 'Română',
-  // hu: 'Magyar',
+  en: 'English',
+  ru: 'Русский',
 };
 
 const languageMenu = (langText, handleMenuClick) => {
@@ -26,29 +27,9 @@ const languageMenu = (langText, handleMenuClick) => {
   );
 };
 
-const languageButtons = (langText, handleBtnClick) => {
-  return (
-    <div className="language-btn-mobile">
-      <GlobalOutlined />
-      {langText.map((language) => (
-        <Button key={language} onClick={() => handleBtnClick(language)} type="link">
-          {language}
-        </Button>
-      ))}
-    </div>
-  );
-};
-
 export const Header = () => {
   const { currentLanguage, languageChange } = useGlobalContext();
   const [langText, setLangText] = useState([]);
-  const [showMenu, setShowMenu] = useState(false);
-
-  const menuItems = useMenuItems();
-
-  const handleMenuClick = () => {
-    setShowMenu(!showMenu);
-  };
 
   const filterLanguages = (currentLang) => {
     return Object.entries(LANGUAGES)
@@ -68,7 +49,18 @@ export const Header = () => {
 
   return (
     <div className="navbar">
-      <AntHeader className={showMenu ? 'overlay' : ''}>
+      <div className="container cfr-banner">
+        <img className="cfr-header-logo" src={CfR} alt="Code4Romania" />
+        <Text strong>
+          <Trans>
+            A Code for Romania solution.{' '}
+            <Link to={{ pathname: 'https://code4.ro/ro' }} target="_blank">
+              Find out more.
+            </Link>
+          </Trans>
+        </Text>
+      </div>
+      <AntHeader>
         <div className="container">
           <div className="App-logo">
             <Link to="/">
@@ -76,12 +68,6 @@ export const Header = () => {
               <img src={logo} alt="Bulina Roșie logo" />
             </Link>
           </div>
-
-          <HeaderMenu
-            menuItems={menuItems}
-            showMenu={showMenu}
-            endAction={languageButtons(langText, handleLanguageBtnClick)}
-          />
 
           <Dropdown
             className="language-btn-desktop"
@@ -93,10 +79,6 @@ export const Header = () => {
               <DownOutlined />
             </Button>
           </Dropdown>
-          <Button className="App-menu-button" onClick={handleMenuClick}>
-            <MenuOutlined />
-          </Button>
-          <div className={`overlay ${showMenu ? 'show' : ''}`} onClick={handleMenuClick} />
         </div>
       </AntHeader>
     </div>

@@ -1,75 +1,25 @@
 import React from 'react';
-import { Layout, Typography } from 'antd';
+import { Divider, Layout, Typography } from 'antd';
 import { Trans } from '@lingui/macro';
-import { Link } from 'react-router-dom';
-import FooterLogo from './FooterLogo';
 
-// @TODO update logo for project owner
-// import Mkbt from '../../images/MKBT-logo-black.png';
-import CfR from '../../images/footer_CfR.svg';
-import Tfsg from '../../images/footer_tfsg.svg';
-
-import { useGlobalContext } from '../../context';
-
-const { Text } = Typography;
+const { Paragraph } = Typography;
 const { Footer } = Layout;
 
 const FooterFragment = () => {
-  const { currentLanguage } = useGlobalContext();
-
   return (
     <Footer className="footer">
       <div className="container">
-        <div className="footer__logos">
-          <FooterLogo
-            label={<Trans>A project by </Trans>}
-            // @TODO update logo and link for project owner
-            // href={`https://mkbt.ro/?lang=${currentLanguage}`}
-            // src={Mkbt}
-            height="70px"
-          />
-          <FooterLogo
-            label={<Trans>Implemented by </Trans>}
-            href={`https://tfsg.code4.ro/${currentLanguage}`}
-            src={Tfsg}
-            height="50px"
-          />
-          <FooterLogo
-            label={<Trans>Designed by </Trans>}
-            href={`https://code4.ro/${currentLanguage}`}
-            src={CfR}
-            height="50px"
-          />
-        </div>
-        <div className="footer__links">
-          <Link to="/despre">
-            <Text>
-              <Trans>About the project</Trans>
-            </Text>
-          </Link>
-          <a
-            href={`https://code4.ro/${currentLanguage === 'ro' ? 'ro/doneaza' : 'en/donate'}`}
-            target="_blank"
-            rel="noreferrer"
-            className="footer__donate"
-          >
-            <Text>
-              <Trans>Donate</Trans>
-            </Text>
-          </a>
-        </div>
-        <div className="footer__links">
-          <Link to="/politica-de-confidentialitate">
-            <Text>
-              <Trans>Privacy policy</Trans>
-            </Text>
-          </Link>
-          <Link to="/termeni-si-conditii">
-            <Text>
-              <Trans>Terms &amp; conditions</Trans>
-            </Text>
-          </Link>
-        </div>
+        <Paragraph>
+          <Trans>
+            If you’d like to report any mistakes, inconsistencies or omissions please let us know by
+            writing an e-mail to contact@code4.ro. We’ll do our best to integrate your feedback.
+          </Trans>
+        </Paragraph>
+        <Divider />
+        <Paragraph>
+          &copy; {new Date().getFullYear()} Sprijin de urgență.{' '}
+          <Trans>A Code for Romania solution.</Trans>
+        </Paragraph>
       </div>
     </Footer>
   );

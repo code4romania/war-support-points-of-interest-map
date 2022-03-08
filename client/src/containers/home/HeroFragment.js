@@ -4,7 +4,7 @@ import { Trans } from '@lingui/macro';
 
 import { Hero } from '../../components/Hero';
 
-import heroImage from '../../images/home_hero.png';
+import heroImage from '../../images/Hands4.png';
 
 const { Paragraph } = Typography;
 

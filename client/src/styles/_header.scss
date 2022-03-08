@@ -121,14 +121,18 @@
   }
 }
 
-.language-btn-desktop {
-  @media (max-width: $breakpoint-tablet) {
-    display: none;
-  }
-}
-
 .language-btn-mobile {
   @media (min-width: $breakpoint-tablet) {
     display: none;
   }
+}
+
+.cfr-banner {
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+.cfr-header-logo {
+  height: 1.5rem;
+  margin-right: 1.5rem;
 }
