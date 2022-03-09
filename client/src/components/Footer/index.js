@@ -1,26 +1,82 @@
 import React from 'react';
-import { Divider, Layout, Typography } from 'antd';
+import { Col, Layout, Row, Typography } from 'antd';
 import { Trans } from '@lingui/macro';
+import { Link } from 'react-router-dom';
+import CfRTaskForceLogo from '../../images/code_logo_colored.svg';
 
-const { Paragraph } = Typography;
+const { Paragraph, Text } = Typography;
 const { Footer } = Layout;
 
 const FooterFragment = () => {
   return (
     <Footer className="footer">
-      <div className="container">
-        <Paragraph>
-          <Trans>
-            If you’d like to report any mistakes, inconsistencies or omissions please let us know by
-            writing an e-mail to contact@code4.ro. We’ll do our best to integrate your feedback.
-          </Trans>
-        </Paragraph>
-        <Divider />
-        <Paragraph>
-          &copy; {new Date().getFullYear()} Sprijin de urgență.{' '}
-          <Trans>A Code for Romania solution.</Trans>
-        </Paragraph>
-      </div>
+      <Row className="container developed" align="middle" type="flex" justify="end">
+        <Text>
+          <Trans>Project Developed In Program</Trans>
+        </Text>
+        <Link to={{ pathname: 'https://code4.ro/ro/code-for-romania-war-task-force' }}>
+          <img src={CfRTaskForceLogo} alt="Code 4 Romania logo" />
+        </Link>
+      </Row>
+      <Row className="links">
+        <Row className="container" type="flex">
+          <Col xs={24} md={12} xl={8}>
+            <ul>
+              <li>
+                <Trans>Useful Links</Trans>
+              </li>
+
+              <li>
+                <Link to="/about-project">
+                  <Trans>About the Project</Trans>
+                </Link>
+              </li>
+              <li>
+                <Link target="_blank" to={{ pathname: 'https://dopomoha.ro/' }}>
+                  Dopomoha.ro
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  to={{
+                    pathname: 'https://github.com/code4romania/war-harta-sprijin-de-urgenta',
+                  }}
+                >
+                  <Trans>Source code</Trans>
+                </Link>
+              </li>
+            </ul>
+          </Col>
+          <Col xs={24} md={12} xl={8}>
+            <ul>
+              <li>
+                <Trans>Legal Information</Trans>
+              </li>
+
+              <li>
+                <Link to="/confidentiality-policy">
+                  <Trans>Privacy Policy</Trans>
+                </Link>
+              </li>
+              <li>
+                <Link to="/confidentiality-policy">
+                  <Trans>Terms and Conditions</Trans>
+                </Link>
+              </li>
+            </ul>
+            <br />
+          </Col>
+          <Col xs={24} md={24} xl={8}>
+            <Paragraph>&copy; {new Date().getFullYear()} Code for Romania</Paragraph>
+            <Paragraph>
+              <Trans>
+                Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical
+              </Trans>
+            </Paragraph>
+          </Col>
+        </Row>
+      </Row>
     </Footer>
   );
 };
