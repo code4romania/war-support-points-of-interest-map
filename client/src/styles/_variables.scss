@@ -14,30 +14,20 @@ $container-width: 1280px;
 // =======================
 // header
 // =======================
-$header-height: 120px;
+$header-height: 78px;
 
 // =======================
 // colors
 // =======================
 $primary-color: #004aad;
 $primary-dark: #1c1080;
-$primary-light: #f0a167;
+// $primary-light: #f0a167;
 
-$secondary-dark: #be3386;
-$secondary-main: #ff7648;
-$secondary-light: #fe6262;
+// $secondary-dark: #be3386;
+$secondary-main: #efc400;
+// $secondary-light: #fe6262;
 
 $text-color: #252525;
 $green-color: #229445;
 
 $footer-text-color: #000;
-
-// =======================
-// Cards
-// =======================
-$card-colors: (
-  '0': $secondary-main,
-  '1': $secondary-dark,
-  '2': $secondary-light,
-);
-$blog-card-radius: 0.5rem;

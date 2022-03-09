@@ -1,5 +1,33 @@
 .hero-container {
   background-color: #fff;
+
+  .partners {
+    font-weight: 700;
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
+    & .ant-typography {
+      color: rgb(107 114 128);
+    }
+
+    img {
+      height: 38px;
+    }
+  }
+
+  .help {
+    background-color: $secondary-main;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+    a {
+      color: black;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
 }
 
 .hero-body {

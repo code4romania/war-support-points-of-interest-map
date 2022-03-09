@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Dropdown, Layout, Menu, Typography } from 'antd';
 import { DownOutlined, GlobalOutlined } from '@ant-design/icons';
@@ -11,17 +11,17 @@ const { Header: AntHeader } = Layout;
 const { Text } = Typography;
 
 const LANGUAGES = {
-  uk: 'Українська',
-  ro: 'Română',
-  en: 'English',
-  ru: 'Русский',
+  ro: 'RO',
+  en: 'EN',
+  uk: 'UA',
+  ru: 'RU',
 };
 
-const languageMenu = (langText, handleMenuClick) => {
+const languageMenu = (selectedKey, handleMenuClick) => {
   return (
-    <Menu onClick={(e) => handleMenuClick(e.key)}>
-      {langText.map((language) => (
-        <Menu.Item key={language}>{language}</Menu.Item>
+    <Menu onClick={(e) => handleMenuClick(e.key)} selectedKeys={[selectedKey]}>
+      {Object.entries(LANGUAGES).map(([key, language]) => (
+        <Menu.Item key={key}>{language}</Menu.Item>
       ))}
     </Menu>
   );
@@ -29,23 +29,10 @@ const languageMenu = (langText, handleMenuClick) => {
 
 export const Header = () => {
   const { currentLanguage, languageChange } = useGlobalContext();
-  const [langText, setLangText] = useState([]);
-
-  const filterLanguages = (currentLang) => {
-    return Object.entries(LANGUAGES)
-      .filter(([key]) => key !== currentLang)
-      .map((pair) => pair[1]);
-  };
 
   const handleLanguageBtnClick = (language) => {
-    const locale = Object.keys(LANGUAGES).find((key) => LANGUAGES[key] === language);
-    languageChange(locale);
-    setLangText(filterLanguages(locale));
+    languageChange(language);
   };
-
-  useEffect(() => {
-    setLangText(filterLanguages(currentLanguage));
-  }, [currentLanguage]);
 
   return (
     <div className="navbar">
@@ -71,7 +58,7 @@ export const Header = () => {
 
           <Dropdown
             className="language-btn-desktop"
-            overlay={() => languageMenu(langText, handleLanguageBtnClick)}
+            overlay={() => languageMenu(currentLanguage, handleLanguageBtnClick)}
             trigger={['click']}
           >
             <Button>

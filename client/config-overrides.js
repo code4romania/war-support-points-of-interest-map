@@ -12,7 +12,8 @@ module.exports = override(
       javascriptEnabled: true,
       modifyVars: {
         '@primary-color': '#004aad',
-        '@font-family': '"Source Sans Pro", sans-serif',
+        '@font-family': 'Titillium Web',
+        '@text-color': '#000',
       },
     },
   }),
