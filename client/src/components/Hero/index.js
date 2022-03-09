@@ -29,15 +29,15 @@ export const Hero = ({ heroImage, title, subTitle, children, titleLevel }) => {
           <img src={CfRLogo} alt="DSU Logo" />
         </Link>
       </Row>
-      <Row className="container help" type="flex" justify="end">
-        <div>
+      <Row className="help">
+        <Row className="container" type="flex" justify="end">
           <Trans>
             Find out all the information you need on{' '}
             <Link to={{ pathname: 'https://www.dopomoha.ro' }} target="_blank">
               Dopomoha.ro
             </Link>
           </Trans>
-        </div>
+        </Row>
       </Row>
       <Row
         className="container hero-body"
