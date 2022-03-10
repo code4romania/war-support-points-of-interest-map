@@ -51,8 +51,7 @@ export const Header = () => {
         <div className="container">
           <div className="App-logo">
             <Link to="/">
-              {/* @TODO update logo */}
-              <img src={logo} alt="Bulina Roșie logo" />
+              <img src={logo} alt="Sprijin de urgenta logo" />
             </Link>
           </div>
 
