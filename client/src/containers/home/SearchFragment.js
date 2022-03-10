@@ -106,6 +106,7 @@ export const SearchFragment = ({ isLoading, onSearch, onSelectResult }) => {
           onSearch={debouncedSearchHandler}
           placeholder={searchPlaceholderText}
           onSelect={onSelectResult}
+          defaultActiveFirstOption={false}
         >
           <Input minLength={3} suffix={<Suffix input={searchInput} loading={isLoading} />} />
         </AutoComplete>
