@@ -27,7 +27,10 @@ const FooterFragment = () => {
               </li>
 
               <li>
-                <Link to="/about-project">
+                <Link
+                  to={{ pathname: 'https://sprijindeurgenta.ro/about-project' }}
+                  target="_blank"
+                >
                   <Trans>About the Project</Trans>
                 </Link>
               </li>
@@ -55,12 +58,18 @@ const FooterFragment = () => {
               </li>
 
               <li>
-                <Link to="/confidentiality-policy">
+                <Link
+                  to={{ pathname: 'https://sprijindeurgenta.ro/confidentiality-policy' }}
+                  target="_blank"
+                >
                   <Trans>Privacy Policy</Trans>
                 </Link>
               </li>
               <li>
-                <Link to="/confidentiality-policy">
+                <Link
+                  to={{ pathname: 'https://sprijindeurgenta.ro/confidentiality-policy' }}
+                  target="_blank"
+                >
                   <Trans>Terms and Conditions</Trans>
                 </Link>
               </li>

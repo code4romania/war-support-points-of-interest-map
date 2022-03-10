@@ -1,20 +1,10 @@
 {
-  "404.contact_message": {
-    "translation": "Dacă mai întâmpini probleme, te rugăm să ne trimiți un e-mail la ",
-    "origin": [
-      [
-        "containers/404/HeroFragment.js",
-        18
-      ]
-    ],
-    "extractedComments": []
-  },
   "404.sorry_message": {
-    "translation": "Nu reușim să găsim pagina pe care o cauți. Te rugăm să revii la pagina principală și să reiei căutarea sau să navighezi prin restul platformei nostre cu ajutorul meniului de sus.",
+    "translation": "Nu reușim să găsim pagina pe care o cauți. Te rugăm să revii la pagina principală și să reiei căutarea.",
     "origin": [
       [
         "containers/404/HeroFragment.js",
-        15
+        13
       ]
     ],
     "extractedComments": []
@@ -24,17 +14,7 @@
     "origin": [
       [
         "containers/404/HeroFragment.js",
-        13
-      ]
-    ],
-    "extractedComments": []
-  },
-  "A Code for Romania solution.": {
-    "translation": "O soluție Code for Romania.",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        21
+        11
       ]
     ],
     "extractedComments": []
@@ -44,17 +24,27 @@
     "origin": [
       [
         "components/Header/index.js",
-        55
+        42
       ]
     ],
     "extractedComments": []
   },
-  "About the project": {
+  "A Project In Partnership With": {
+    "translation": "Un proiect in parteneriat cu",
+    "origin": [
+      [
+        "components/Hero/index.js",
+        17
+      ]
+    ],
+    "extractedComments": []
+  },
+  "About the Project": {
     "translation": "Despre proiect",
     "origin": [
       [
-        "containers/404/HeroFragment.js",
-        25
+        "components/Footer/index.js",
+        34
       ]
     ],
     "extractedComments": []
@@ -64,7 +54,7 @@
     "origin": [
       [
         "containers/404/HeroFragment.js",
-        22
+        16
       ]
     ],
     "extractedComments": []
@@ -79,12 +69,22 @@
     ],
     "extractedComments": []
   },
-  "If you’d like to report any mistakes, inconsistencies or omissions please let us know by writing an e-mail to contact@code4.ro. We’ll do our best to integrate your feedback.": {
-    "translation": "Dacă ați identificat neconcordanțe în conținut sau aveți nelămuriri scrieți-ne la e-mailul contact@code4.ro. Vom face tot posibilul să integrăm feedbackul dumneavoastră.",
+  "Find out all the information you need on <0>Dopomoha.ro</0>": {
+    "translation": "Află toate informațiile de care ai nevoie pe <0>Dopomoha.ro</0>",
+    "origin": [
+      [
+        "components/Hero/index.js",
+        34
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical": {
+    "translation": "Organizație neguvernamentală independentă neafiliată politic și apolitică",
     "origin": [
       [
         "components/Footer/index.js",
-        13
+        82
       ]
     ],
     "extractedComments": []
@@ -95,6 +95,26 @@
       [
         "components/CenterDetails/index.js",
         47
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Integrated resource and demand management platform": {
+    "translation": "Platformă integrată de management de resurse și solicitări",
+    "origin": [
+      [
+        "containers/home/HeroFragment.js",
+        13
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Legal Information": {
+    "translation": "Informații legale",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        57
       ]
     ],
     "extractedComments": []
@@ -129,12 +149,82 @@
     ],
     "extractedComments": []
   },
-  "Welcome!": {
-    "translation": "Bine ai venit!",
+  "Privacy Policy": {
+    "translation": "Politică de confidențialitate",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        65
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Project Developed In Program": {
+    "translation": "Proiect dezvoltat în programul",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        15
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Source code": {
+    "translation": "Codul sursă",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        49
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Sprijin de Urgență is a project developed by Code for Romania for the Department of Emergency Situations for managing resources and needs in times of crisis.": {
+    "translation": "Sprijin de Urgență este un proiect dezvoltat de Code for Romania pentru Departamentul de Situații de Urgență pentru administrarea de resurse și nevoi în momente de criză.",
     "origin": [
       [
         "containers/home/HeroFragment.js",
-        13
+        23
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Terms and Conditions": {
+    "translation": "Termeni și condiții",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        73
+      ]
+    ],
+    "extractedComments": []
+  },
+  "The Sprijin de Urgență Platform is an integrated resource management system that the civil society and all individuals and legal entities can bring together in order to help in critical situations. Depending on your current needs, choose one of the options below.": {
+    "translation": "Platforma Sprijin de Urgență este un sistem integrat de management al resurselor pe care societatea civilă și toate persoanele fizice și juridice le pot aduce împreună pentru a ajuta în situații critice. În funcție de nevoile curente, alege una dintre variantele de mai jos.",
+    "origin": [
+      [
+        "containers/home/HeroFragment.js",
+        16
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Useful Links": {
+    "translation": "Linkuri utile",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        26
+      ]
+    ],
+    "extractedComments": []
+  },
+  "done by": {
+    "translation": "realizat de",
+    "origin": [
+      [
+        "components/Hero/index.js",
+        26
       ]
     ],
     "extractedComments": []
