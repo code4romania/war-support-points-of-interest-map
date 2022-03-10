@@ -14,6 +14,10 @@ export const CenterDetails = ({ onClose, isLoading, details, onClick }) => {
         label: <Trans>Name</Trans>,
         value: details.name,
       },
+      {
+        label: <Trans>Email</Trans>,
+        value: <a href={`mailto:${details.email}`}>{details.email}</a>,
+      },
     ].filter(({ value }) => value);
   }, [details]);
 

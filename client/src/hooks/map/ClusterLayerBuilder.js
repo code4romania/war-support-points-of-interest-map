@@ -4,9 +4,13 @@ const { H } = window;
 
 export default {
   buildClusterLayer: (data, onClusterClick, onNoiseClick) => {
-    const dataPoints = data.map((item) => {
-      return new H.clustering.DataPoint(item.lat, item.lng, 1, item);
-    });
+    const dataPoints = data
+      .map((item) => {
+        if (!item.lat || !item.lng) return null;
+
+        return new H.clustering.DataPoint(item.lat, item.lng, 1, item);
+      })
+      .filter((point) => point);
     const clusteredDataProvider = new H.clustering.Provider(dataPoints, {
       clusteringOptions: {
         eps: 32,
