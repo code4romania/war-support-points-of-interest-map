@@ -219,6 +219,16 @@
     ],
     "extractedComments": []
   },
+  "The map is continuously updated. If you know of any official collecting center that we did not add to the map, please send us an email with its details at <0>contact@code4.ro</0>.": {
+    "translation": "Harta centrelor de colectare este in continua actualizare. Daca stii de un centru oficial de colectare in orasul tau pe care nu l-am pus pe harta, trimite-ne un email cu detalii despre el la <0>contact@code4.ro</0>.",
+    "origin": [
+      [
+        "containers/home/SearchMapFragment.js",
+        63
+      ]
+    ],
+    "extractedComments": []
+  },
   "Useful Links": {
     "translation": "Linkuri utile",
     "origin": [

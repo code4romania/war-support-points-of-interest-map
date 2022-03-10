@@ -1,4 +1,6 @@
 import React, { useCallback, useState } from 'react';
+import { Trans } from '@lingui/macro';
+import { Typography } from 'antd';
 import { MapFragment } from './MapFragment';
 import { SearchFragment } from './SearchFragment';
 import { useGeoCodeSearch } from '../../hooks/map/useGeoCodeSearch';
@@ -6,6 +8,8 @@ import { zoomToNearestPointToPosition } from '../../utils';
 import { useMap, useSelectedCenterPk } from '../../store';
 import { useClearSelectedMarkers } from '../../hooks/map/useClearSelectedMarkers';
 import { helpCenters } from '../../data';
+
+const { Paragraph } = Typography;
 
 export const SearchMapFragment = () => {
   const [isLoadingLocation, setIsLoadingLocation] = useState(false);
@@ -57,6 +61,14 @@ export const SearchMapFragment = () => {
         onSelectResult={onSelectResultHandler}
       />
       <MapFragment />
+      <br />
+      <Paragraph>
+        <Trans>
+          The map is continuously updated. If you know of any official collecting center that we did
+          not add to the map, please send us an email with its details at{' '}
+          {<a href="mailto:contact@code4.ro">contact@code4.ro</a>}.
+        </Trans>
+      </Paragraph>
     </>
   );
 };
