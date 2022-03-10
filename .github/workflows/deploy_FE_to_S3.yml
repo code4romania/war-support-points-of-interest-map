@@ -20,7 +20,8 @@ jobs:
       - run: npm ci       
       - run: npm run build
         env:
-          NODE_ENV: production 
+          NODE_ENV: production
+          REACT_APP_HERE_MAPS_API_KEY: ${{ secrets.REACT_APP_HERE_MAPS_API_KEY }}
       
       - uses: aws-actions/configure-aws-credentials@v1
         with:
