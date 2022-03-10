@@ -34,7 +34,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        17
+        18
       ]
     ],
     "extractedComments": []
@@ -64,7 +64,17 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        75
+        79
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Email": {
+    "translation": "Електронна пошта",
+    "origin": [
+      [
+        "components/CenterDetails/index.js",
+        18
       ]
     ],
     "extractedComments": []
@@ -74,7 +84,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        34
+        38
       ]
     ],
     "extractedComments": []
@@ -94,7 +104,7 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        47
+        51
       ]
     ],
     "extractedComments": []
@@ -144,7 +154,7 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        62
+        66
       ]
     ],
     "extractedComments": []
@@ -169,22 +179,22 @@
     ],
     "extractedComments": []
   },
+  "See here where your nearest collection center is:": {
+    "translation": "Тут можна дізнатися, де знаходиться найближчий центр збору ресурсів:",
+    "origin": [
+      [
+        "containers/home/SearchFragment.js",
+        97
+      ]
+    ],
+    "extractedComments": []
+  },
   "Source code": {
     "translation": "Вихідний код",
     "origin": [
       [
         "components/Footer/index.js",
         49
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Sprijin de Urgență is a project developed by Code for Romania for the Department of Emergency Situations for managing resources and needs in times of crisis.": {
-    "translation": "Надзвичайна підтримка – це проект, розроблений Кодексом Румунії для Департаменту надзвичайних ситуацій для управління ресурсами та потребами під час кризи.",
-    "origin": [
-      [
-        "containers/home/HeroFragment.js",
-        23
       ]
     ],
     "extractedComments": []
@@ -199,8 +209,8 @@
     ],
     "extractedComments": []
   },
-  "The Sprijin de Urgență Platform is an integrated resource management system that the civil society and all individuals and legal entities can bring together in order to help in critical situations. Depending on your current needs, choose one of the options below.": {
-    "translation": "Платформа підтримки надзвичайних ситуацій – це інтегрована система управління ресурсами, яку громадянське суспільство та всі фізичні та юридичні особи можуть об’єднати, щоб допомогти у критичних ситуаціях. Залежно від ваших поточних потреб оберіть один із наведених нижче варіантів.",
+  "The Sprijin de Urgență Platform is an integrated resource management system that civil society and all individuals and legal entities can bring together to help in critical situations. Individuals who wish to provide food, clothing, bedding, tents or other donations or who wish to volunteer can do so directly at dedicated collection points. From there, resources will be directed where they are most needed.": {
+    "translation": "Платформа Екстрена підтримка – це інтегрована система управління ресурсами, яку громадянське суспільство та всі фізичні та юридичні особи можуть об'єднати для надання допомоги у критичних ситуаціях. Особи, які бажають надати харчові продукти, одяг, ліжка, намети або інші пожертвування або бажають стати волонтерами, можуть зробити це безпосередньо у спеціальних пунктах збору. Звідти ресурси будуть прямувати туди, де вони найпотрібніші.",
     "origin": [
       [
         "containers/home/HeroFragment.js",
@@ -224,7 +234,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        26
+        30
       ]
     ],
     "extractedComments": []

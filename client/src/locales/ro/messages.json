@@ -34,7 +34,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        17
+        18
       ]
     ],
     "extractedComments": []
@@ -64,7 +64,17 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        75
+        79
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Email": {
+    "translation": "Email",
+    "origin": [
+      [
+        "components/CenterDetails/index.js",
+        18
       ]
     ],
     "extractedComments": []
@@ -74,7 +84,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        34
+        38
       ]
     ],
     "extractedComments": []
@@ -94,7 +104,7 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        47
+        51
       ]
     ],
     "extractedComments": []
@@ -144,7 +154,7 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        62
+        66
       ]
     ],
     "extractedComments": []
@@ -169,22 +179,22 @@
     ],
     "extractedComments": []
   },
+  "See here where your nearest collection center is:": {
+    "translation": "Vezi aici unde este cel mai apropiat centru de colectare de tine:",
+    "origin": [
+      [
+        "containers/home/SearchFragment.js",
+        97
+      ]
+    ],
+    "extractedComments": []
+  },
   "Source code": {
     "translation": "Codul sursă",
     "origin": [
       [
         "components/Footer/index.js",
         49
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Sprijin de Urgență is a project developed by Code for Romania for the Department of Emergency Situations for managing resources and needs in times of crisis.": {
-    "translation": "Sprijin de Urgență este un proiect dezvoltat de Code for Romania pentru Departamentul de Situații de Urgență pentru administrarea de resurse și nevoi în momente de criză.",
-    "origin": [
-      [
-        "containers/home/HeroFragment.js",
-        23
       ]
     ],
     "extractedComments": []
@@ -199,8 +209,8 @@
     ],
     "extractedComments": []
   },
-  "The Sprijin de Urgență Platform is an integrated resource management system that the civil society and all individuals and legal entities can bring together in order to help in critical situations. Depending on your current needs, choose one of the options below.": {
-    "translation": "Platforma Sprijin de Urgență este un sistem integrat de management al resurselor pe care societatea civilă și toate persoanele fizice și juridice le pot aduce împreună pentru a ajuta în situații critice. În funcție de nevoile curente, alege una dintre variantele de mai jos.",
+  "The Sprijin de Urgență Platform is an integrated resource management system that civil society and all individuals and legal entities can bring together to help in critical situations. Individuals who wish to provide food, clothing, bedding, tents or other donations or who wish to volunteer can do so directly at dedicated collection points. From there, resources will be directed where they are most needed.": {
+    "translation": "Platforma Sprijin de Urgență este un sistem integrat de management al resurselor pe care societatea civilă și toate persoanele fizice și juridice le pot aduce împreună pentru a ajuta în situații critice. Persoanele fizice care doresc să pună la dispoziție resurse de tip produse alimentare, îmbrăcăminte, paturi, corturi sau alte donații sau doresc să voluntarieze pot face acest lucru direct la punctele dedicate de colectare. De acolo, resursele vor fi direcționate unde este cel mai mare nevoie de ele.",
     "origin": [
       [
         "containers/home/HeroFragment.js",
@@ -224,7 +234,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        26
+        30
       ]
     ],
     "extractedComments": []
