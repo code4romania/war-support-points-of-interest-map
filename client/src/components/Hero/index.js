@@ -35,12 +35,11 @@ export const Hero = ({ heroImage, title, subTitle, children, titleLevel }) => {
       </Row>
       <Row className="help">
         <Row className="container" type="flex" justify="end">
-          <Trans>
-            Find out all the information you need on{' '}
-            <Link to={{ pathname: 'https://www.dopomoha.ro' }} target="_blank">
-              Dopomoha.ro
-            </Link>
-          </Trans>
+          <Trans>Find out all the information you need on</Trans>
+          &#8239;
+          <Link to={{ pathname: 'https://www.dopomoha.ro' }} target="_blank">
+            Dopomoha.ro
+          </Link>
         </Row>
       </Row>
       <Row

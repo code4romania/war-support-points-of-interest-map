@@ -79,8 +79,8 @@
     ],
     "extractedComments": []
   },
-  "Find out all the information you need on <0>Dopomoha.ro</0>": {
-    "translation": "Вся необхідна інформація на <0>Dopomoha.ro</0>",
+  "Find out all the information you need on": {
+    "translation": "Вся необхідна інформація на",
     "origin": [
       [
         "components/Hero/index.js",
@@ -224,7 +224,7 @@
     "origin": [
       [
         "containers/home/SearchMapFragment.js",
-        63
+        66
       ]
     ],
     "extractedComments": []
