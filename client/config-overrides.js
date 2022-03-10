@@ -11,8 +11,9 @@ module.exports = override(
     lessOptions: {
       javascriptEnabled: true,
       modifyVars: {
-        '@primary-color': '#BE3386',
-        '@font-family': '"Source Sans Pro", sans-serif',
+        '@primary-color': '#004aad',
+        '@font-family': 'Titillium Web',
+        '@text-color': '#000',
       },
     },
   }),

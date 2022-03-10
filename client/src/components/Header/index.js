@@ -1,74 +1,53 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Dropdown, Layout, Menu } from 'antd';
-import { DownOutlined, GlobalOutlined, MenuOutlined } from '@ant-design/icons';
+import { Button, Dropdown, Layout, Menu, Typography } from 'antd';
+import { DownOutlined, GlobalOutlined } from '@ant-design/icons';
+import { Trans } from '@lingui/macro';
 import logo from '../../logo.svg';
-
 import { useGlobalContext } from '../../context';
-import { HeaderMenu } from '../HeaderMenu';
-import { useMenuItems } from '../../hooks';
+import CfR from '../../images/footer_CfR.svg';
 
 const { Header: AntHeader } = Layout;
+const { Text } = Typography;
 
 const LANGUAGES = {
-  en: 'English',
-  ro: 'Română',
-  // hu: 'Magyar',
+  ro: 'RO',
+  en: 'EN',
+  uk: 'UA',
+  ru: 'RU',
 };
 
-const languageMenu = (langText, handleMenuClick) => {
+const languageMenu = (selectedKey, handleMenuClick) => {
   return (
-    <Menu onClick={(e) => handleMenuClick(e.key)}>
-      {langText.map((language) => (
-        <Menu.Item key={language}>{language}</Menu.Item>
+    <Menu onClick={(e) => handleMenuClick(e.key)} selectedKeys={[selectedKey]}>
+      {Object.entries(LANGUAGES).map(([key, language]) => (
+        <Menu.Item key={key}>{language}</Menu.Item>
       ))}
     </Menu>
   );
 };
 
-const languageButtons = (langText, handleBtnClick) => {
-  return (
-    <div className="language-btn-mobile">
-      <GlobalOutlined />
-      {langText.map((language) => (
-        <Button key={language} onClick={() => handleBtnClick(language)} type="link">
-          {language}
-        </Button>
-      ))}
-    </div>
-  );
-};
-
 export const Header = () => {
   const { currentLanguage, languageChange } = useGlobalContext();
-  const [langText, setLangText] = useState([]);
-  const [showMenu, setShowMenu] = useState(false);
-
-  const menuItems = useMenuItems();
-
-  const handleMenuClick = () => {
-    setShowMenu(!showMenu);
-  };
-
-  const filterLanguages = (currentLang) => {
-    return Object.entries(LANGUAGES)
-      .filter(([key]) => key !== currentLang)
-      .map((pair) => pair[1]);
-  };
 
   const handleLanguageBtnClick = (language) => {
-    const locale = Object.keys(LANGUAGES).find((key) => LANGUAGES[key] === language);
-    languageChange(locale);
-    setLangText(filterLanguages(locale));
+    languageChange(language);
   };
-
-  useEffect(() => {
-    setLangText(filterLanguages(currentLanguage));
-  }, [currentLanguage]);
 
   return (
     <div className="navbar">
-      <AntHeader className={showMenu ? 'overlay' : ''}>
+      <div className="container cfr-banner">
+        <img className="cfr-header-logo" src={CfR} alt="Code4Romania" />
+        <Text strong>
+          <Trans>
+            A Code for Romania solution.{' '}
+            <Link to={{ pathname: 'https://code4.ro/ro' }} target="_blank">
+              Find out more.
+            </Link>
+          </Trans>
+        </Text>
+      </div>
+      <AntHeader>
         <div className="container">
           <div className="App-logo">
             <Link to="/">
@@ -77,15 +56,9 @@ export const Header = () => {
             </Link>
           </div>
 
-          <HeaderMenu
-            menuItems={menuItems}
-            showMenu={showMenu}
-            endAction={languageButtons(langText, handleLanguageBtnClick)}
-          />
-
           <Dropdown
             className="language-btn-desktop"
-            overlay={() => languageMenu(langText, handleLanguageBtnClick)}
+            overlay={() => languageMenu(currentLanguage, handleLanguageBtnClick)}
             trigger={['click']}
           >
             <Button>
@@ -93,10 +66,6 @@ export const Header = () => {
               <DownOutlined />
             </Button>
           </Dropdown>
-          <Button className="App-menu-button" onClick={handleMenuClick}>
-            <MenuOutlined />
-          </Button>
-          <div className={`overlay ${showMenu ? 'show' : ''}`} onClick={handleMenuClick} />
         </div>
       </AntHeader>
     </div>

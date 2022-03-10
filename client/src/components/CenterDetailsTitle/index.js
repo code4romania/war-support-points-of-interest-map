@@ -3,20 +3,10 @@ import { Col, Icon, Row, Typography } from 'antd';
 import { Trans } from '@lingui/macro';
 import { Link } from 'react-router-dom';
 import { CenterDetailsTitleType } from '../../types/centers';
-import { ReactComponent as StarIcon } from '../../images/star-solid.svg';
 
 const { Paragraph, Text } = Typography;
 
-export const CenterDetailsTitle = ({
-  streetName,
-  streetNumber,
-  locality,
-  countyCode,
-  lat,
-  lng,
-  averageRating,
-  totalRatings,
-}) => {
+export const CenterDetailsTitle = ({ address, locality, countyCode, lat, lng }) => {
   const showSubtext = locality || countyCode;
 
   return (
@@ -26,9 +16,7 @@ export const CenterDetailsTitle = ({
           <Icon type="environment" />
         </Col>
         <Col span={22}>
-          <Paragraph className="center-details-title__text">
-            {streetName} {streetNumber}{' '}
-          </Paragraph>
+          <Paragraph className="center-details-title__text">{address} </Paragraph>
 
           <Paragraph>
             {showSubtext && (
@@ -52,12 +40,6 @@ export const CenterDetailsTitle = ({
               )
             </Text>
           </Paragraph>
-
-          {Boolean(averageRating) && (
-            <Text className="center-details-rating">
-              <StarIcon /> {Math.round(averageRating * 10) / 10} <span>({totalRatings})</span>
-            </Text>
-          )}
         </Col>
       </Row>
     </Col>

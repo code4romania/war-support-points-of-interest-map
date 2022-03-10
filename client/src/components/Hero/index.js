@@ -1,12 +1,48 @@
 import React from 'react';
 import { Col, Row, Typography } from 'antd';
+import { Trans } from '@lingui/macro';
+import { Link } from 'react-router-dom';
 import { HeroType } from '../../types';
+import GovLogo from '../../images/gov_ro.png';
+import GovMobileLogo from '../../images/gov_ro_mobile.svg';
+import DsuLogo from '../../images/dsu_logo.svg';
+import CfRLogo from '../../images/footer_CfR.svg';
 
 const { Title, Text } = Typography;
 
 export const Hero = ({ heroImage, title, subTitle, children, titleLevel }) => {
   return (
     <div className="hero-container">
+      <Row className="container partners" type="flex" align="middle" justify="end">
+        <Text>
+          <Trans>A Project In Partnership With</Trans>
+        </Text>
+        <Link className="gov-mobile" to={{ pathname: 'https://gov.ro/' }} target="_blank">
+          <img src={GovMobileLogo} alt="Romanian GOV Logo" />
+        </Link>
+        <Link className="gov-desktop" to={{ pathname: 'https://gov.ro/' }} target="_blank">
+          <img src={GovLogo} alt="Romanian GOV Logo" />
+        </Link>
+        <Link to={{ pathname: 'http://www.dsu.mai.gov.ro/' }} target="_blank">
+          <img src={DsuLogo} alt="DSU Logo" />
+        </Link>
+        <Text>
+          <Trans>done by</Trans>
+        </Text>
+        <Link to={{ pathname: 'https://www.code4.ro/' }} target="_blank">
+          <img src={CfRLogo} alt="DSU Logo" />
+        </Link>
+      </Row>
+      <Row className="help">
+        <Row className="container" type="flex" justify="end">
+          <Trans>
+            Find out all the information you need on{' '}
+            <Link to={{ pathname: 'https://www.dopomoha.ro' }} target="_blank">
+              Dopomoha.ro
+            </Link>
+          </Trans>
+        </Row>
+      </Row>
       <Row
         className="container hero-body"
         type="flex"

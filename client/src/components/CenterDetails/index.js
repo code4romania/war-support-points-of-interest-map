@@ -1,45 +1,21 @@
 import React, { useMemo } from 'react';
 import { Button, Card, Col, Icon, Row, Descriptions, Empty } from 'antd';
 import { Trans } from '@lingui/macro';
-import { Link } from 'react-router-dom';
 import { CenterDetailsTitle } from '../CenterDetailsTitle';
-import { useGlobalContext } from '../../context';
 
-export const CenterDetails = ({ onClose, isLoading, details, showPhoneNumber, onClick }) => {
-  const { currentLanguage } = useGlobalContext();
-
+export const CenterDetails = ({ onClose, isLoading, details, onClick }) => {
   const detailsItems = useMemo(() => {
     if (!details) {
       return [];
     }
 
-    const hasTestTypes = details.testTypes?.length > 0;
-
-    const testTypes = hasTestTypes
-      ? details.testTypes
-          .map(({ nameRo, nameEn }) => (currentLanguage === 'ro' ? nameRo : nameEn))
-          .join(', ')
-      : null;
-
     return [
       {
-        label: <Trans>Opening hours</Trans>,
-        value: details.schedule,
-      },
-      {
-        label: <Trans>Test types</Trans>,
-        value: testTypes,
-      },
-      {
-        label: <Trans>Website</Trans>,
-        value: details.website ? (
-          <Link to={{ pathname: details.website }} target="_blank">
-            {details.website}
-          </Link>
-        ) : null,
+        label: <Trans>Name</Trans>,
+        value: details.name,
       },
     ].filter(({ value }) => value);
-  }, [currentLanguage, details]);
+  }, [details]);
 
   const hasDetailItems = detailsItems.length > 0;
 
@@ -47,14 +23,11 @@ export const CenterDetails = ({ onClose, isLoading, details, showPhoneNumber, on
     <Card className="center-details" loading={isLoading}>
       <Row type="flex" gutter={10} className="center-details-header">
         <CenterDetailsTitle
-          streetName={details?.streetName ?? ''}
-          streetNumber={details?.streetNumber}
+          address={details?.address ?? ''}
           locality={details?.locality}
-          countyCode={details?.countyCode}
+          countyCode={details?.countyCode ?? details?.county}
           lat={details?.lat}
           lng={details?.lng}
-          averageRating={details?.averageRating}
-          totalRatings={details?.numberOfRatings}
         />
         <Col span={2}>
           <Icon type="close" onClick={onClose} />
@@ -75,7 +48,7 @@ export const CenterDetails = ({ onClose, isLoading, details, showPhoneNumber, on
         </Row>
       )}
 
-      {showPhoneNumber ? (
+      {details?.phoneNumber ? (
         <Button
           className="call-center-btn"
           icon="phone"

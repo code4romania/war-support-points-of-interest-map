@@ -1,6 +1,6 @@
 {
   "404.sorry_message": {
-    "translation": "We can not find the page you are looking for. Please go back to the main page and start your search again.",
+    "translation": "Ми не можемо знайти сторінку, яку ви шукаєте. Будь ласка, поверніться на головну сторінку та почніть пошук знову.",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -10,7 +10,7 @@
     "extractedComments": []
   },
   "404.title": {
-    "translation": "We are sorry",
+    "translation": "Ми шкодуємо",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -20,7 +20,7 @@
     "extractedComments": []
   },
   "A Code for Romania solution. <0>Find out more.</0>": {
-    "translation": "A Code for Romania solution. <0>Find out more.</0>",
+    "translation": "Код для Румунії рішення. <0>Дізнайся більше.</0>",
     "origin": [
       [
         "components/Header/index.js",
@@ -30,7 +30,7 @@
     "extractedComments": []
   },
   "A Project In Partnership With": {
-    "translation": "A Project In Partnership With",
+    "translation": "Проєкт в партнерстві з",
     "origin": [
       [
         "components/Hero/index.js",
@@ -40,7 +40,7 @@
     "extractedComments": []
   },
   "About the Project": {
-    "translation": "About the Project",
+    "translation": "Про проєкт",
     "origin": [
       [
         "components/Footer/index.js",
@@ -50,6 +50,7 @@
     "extractedComments": []
   },
   "Back to home page": {
+    "translation": "Назад на домашню сторінку",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -59,7 +60,7 @@
     "extractedComments": []
   },
   "Call center": {
-    "translation": "Call center",
+    "translation": "Телефонуйте в центр",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -69,7 +70,7 @@
     "extractedComments": []
   },
   "Find out all the information you need on <0>Dopomoha.ro</0>": {
-    "translation": "Find out all the information you need on <0>Dopomoha.ro</0>",
+    "translation": "Вся необхідна інформація на <0>Dopomoha.ro</0>",
     "origin": [
       [
         "components/Hero/index.js",
@@ -79,7 +80,7 @@
     "extractedComments": []
   },
   "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical": {
-    "translation": "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical",
+    "translation": "Політична та неполітична неурядова незалежна організація",
     "origin": [
       [
         "components/Footer/index.js",
@@ -89,6 +90,7 @@
     "extractedComments": []
   },
   "Information missing": {
+    "translation": "Відсутня інформація",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -98,7 +100,7 @@
     "extractedComments": []
   },
   "Integrated resource and demand management platform": {
-    "translation": "Integrated resource and demand management platform",
+    "translation": "Інтегрована платформа управління ресурсами та попитом",
     "origin": [
       [
         "containers/home/HeroFragment.js",
@@ -108,7 +110,7 @@
     "extractedComments": []
   },
   "Legal Information": {
-    "translation": "Legal Information",
+    "translation": "Правова інформація",
     "origin": [
       [
         "components/Footer/index.js",
@@ -118,7 +120,7 @@
     "extractedComments": []
   },
   "Map loading…": {
-    "translation": "Map loading…",
+    "translation": "Завантаження карти…",
     "origin": [
       [
         "components/MapPlaceholder/index.js",
@@ -128,7 +130,7 @@
     "extractedComments": []
   },
   "Name": {
-    "translation": "Name",
+    "translation": "ім'я",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -138,7 +140,7 @@
     "extractedComments": []
   },
   "Phone number missing": {
-    "translation": "Phone number missing",
+    "translation": "Номер телефону відсутній",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -148,7 +150,7 @@
     "extractedComments": []
   },
   "Privacy Policy": {
-    "translation": "Privacy Policy",
+    "translation": "Політика конфіденційності",
     "origin": [
       [
         "components/Footer/index.js",
@@ -158,7 +160,7 @@
     "extractedComments": []
   },
   "Project Developed In Program": {
-    "translation": "Project Developed In Program",
+    "translation": "Проєкт розроблено в програмі",
     "origin": [
       [
         "components/Footer/index.js",
@@ -168,7 +170,7 @@
     "extractedComments": []
   },
   "Source code": {
-    "translation": "Source code",
+    "translation": "Вихідний код",
     "origin": [
       [
         "components/Footer/index.js",
@@ -178,7 +180,7 @@
     "extractedComments": []
   },
   "Sprijin de Urgență is a project developed by Code for Romania for the Department of Emergency Situations for managing resources and needs in times of crisis.": {
-    "translation": "Sprijin de Urgență is a project developed by Code for Romania for the Department of Emergency Situations for managing resources and needs in times of crisis.",
+    "translation": "Надзвичайна підтримка – це проект, розроблений Кодексом Румунії для Департаменту надзвичайних ситуацій для управління ресурсами та потребами під час кризи.",
     "origin": [
       [
         "containers/home/HeroFragment.js",
@@ -188,7 +190,7 @@
     "extractedComments": []
   },
   "Terms and Conditions": {
-    "translation": "Terms and Conditions",
+    "translation": "Правила та умови",
     "origin": [
       [
         "components/Footer/index.js",
@@ -198,7 +200,7 @@
     "extractedComments": []
   },
   "The Sprijin de Urgență Platform is an integrated resource management system that the civil society and all individuals and legal entities can bring together in order to help in critical situations. Depending on your current needs, choose one of the options below.": {
-    "translation": "The Sprijin de Urgență Platform is an integrated resource management system that the civil society and all individuals and legal entities can bring together in order to help in critical situations. Depending on your current needs, choose one of the options below.",
+    "translation": "Платформа підтримки надзвичайних ситуацій – це інтегрована система управління ресурсами, яку громадянське суспільство та всі фізичні та юридичні особи можуть об’єднати, щоб допомогти у критичних ситуаціях. Залежно від ваших поточних потреб оберіть один із наведених нижче варіантів.",
     "origin": [
       [
         "containers/home/HeroFragment.js",
@@ -208,7 +210,7 @@
     "extractedComments": []
   },
   "Useful Links": {
-    "translation": "Useful Links",
+    "translation": "Корисні посилання",
     "origin": [
       [
         "components/Footer/index.js",
@@ -218,7 +220,7 @@
     "extractedComments": []
   },
   "done by": {
-    "translation": "done by",
+    "translation": "Зроблено",
     "origin": [
       [
         "components/Hero/index.js",
@@ -228,7 +230,7 @@
     "extractedComments": []
   },
   "see how to get there": {
-    "translation": "see how to get there",
+    "translation": "подивіться, як туди дістатися",
     "origin": [
       [
         "components/CenterDetailsTitle/index.js",

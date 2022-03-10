@@ -1,30 +1,10 @@
 {
-  "23 Grigore Pamfil, Sector 1, Bucharest": {
-    "translation": "Strada Grigore Pamfil, Sector 1, București",
-    "origin": [
-      [
-        "containers/contact/MapFragment.js",
-        20
-      ]
-    ],
-    "extractedComments": []
-  },
-  "404.contact_message": {
-    "translation": "Dacă mai întâmpini probleme, te rugăm să ne trimiți un e-mail la ",
-    "origin": [
-      [
-        "containers/404/HeroFragment.js",
-        18
-      ]
-    ],
-    "extractedComments": []
-  },
   "404.sorry_message": {
-    "translation": "Nu reușim să găsim pagina pe care o cauți. Te rugăm să revii la pagina principală și să reiei căutarea sau să navighezi prin restul platformei nostre cu ajutorul meniului de sus.",
+    "translation": "Nu reușim să găsim pagina pe care o cauți. Te rugăm să revii la pagina principală și să reiei căutarea.",
     "origin": [
       [
         "containers/404/HeroFragment.js",
-        15
+        13
       ]
     ],
     "extractedComments": []
@@ -34,93 +14,37 @@
     "origin": [
       [
         "containers/404/HeroFragment.js",
-        13
+        11
       ]
     ],
     "extractedComments": []
   },
-  "<0>open in Google Maps</0>": {
-    "translation": "<0>deschide în Google Maps</0>",
+  "A Code for Romania solution. <0>Find out more.</0>": {
+    "translation": "O soluție Code for Romania. <0>Află mai multe</0>",
     "origin": [
       [
-        "containers/contact/MapFragment.js",
-        24
+        "components/Header/index.js",
+        42
       ]
     ],
     "extractedComments": []
   },
-  "A project by": {
-    "translation": "Proiect realizat de",
+  "A Project In Partnership With": {
+    "translation": "Un proiect in parteneriat cu",
     "origin": [
       [
-        "components/Footer/index.js",
-        25
-      ],
-      [
-        "containers/about/AuthorsFragment.js",
-        16
+        "components/Hero/index.js",
+        17
       ]
     ],
     "extractedComments": []
   },
-  "About Vulnerable Romania": {
-    "translation": "Despre Romania Vulnerabilă",
-    "origin": [
-      [
-        "containers/blog/HeroFragment.js",
-        15
-      ]
-    ],
-    "extractedComments": []
-  },
-  "About project": {
-    "translation": "Despre proiect",
-    "origin": [
-      [
-        "hooks/useMenuItems.js",
-        9
-      ]
-    ],
-    "extractedComments": []
-  },
-  "About the project": {
+  "About the Project": {
     "translation": "Despre proiect",
     "origin": [
       [
         "components/Footer/index.js",
-        47
-      ],
-      [
-        "containers/404/HeroFragment.js",
-        25
-      ],
-      [
-        "containers/about/HeroFragment.js",
-        15
-      ],
-      [
-        "containers/home/ParagraphFragment.js",
-        13
-      ]
-    ],
-    "extractedComments": []
-  },
-  "About you": {
-    "translation": "Despre tine",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        65
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Article not found": {
-    "translation": "Articolul nu a fost găsit",
-    "origin": [
-      [
-        "containers/blog-post/BlogPostDetailsFragment/BlogPostDetailsFragment.js",
-        43
+        34
       ]
     ],
     "extractedComments": []
@@ -130,45 +54,7 @@
     "origin": [
       [
         "containers/404/HeroFragment.js",
-        22
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Blog": {
-    "translation": "Blog",
-    "origin": [
-      [
-        "containers/404/404.js",
-        10
-      ],
-      [
-        "containers/home/index.js",
         16
-      ],
-      [
-        "hooks/useMenuItems.js",
-        17
-      ]
-    ],
-    "extractedComments": []
-  },
-  "By location": {
-    "translation": "După locație",
-    "origin": [
-      [
-        "containers/home/SearchMapFragment.js",
-        16
-      ]
-    ],
-    "extractedComments": []
-  },
-  "By testing center address": {
-    "translation": "După adresa centrului de testare",
-    "origin": [
-      [
-        "containers/home/SearchMapFragment.js",
-        20
       ]
     ],
     "extractedComments": []
@@ -178,101 +64,27 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        102
+        75
       ]
     ],
     "extractedComments": []
   },
-  "Centers list": {
-    "translation": "Listă centre",
+  "Find out all the information you need on <0>Dopomoha.ro</0>": {
+    "translation": "Află toate informațiile de care ai nevoie pe <0>Dopomoha.ro</0>",
     "origin": [
       [
-        "hooks/useMenuItems.js",
-        13
+        "components/Hero/index.js",
+        34
       ]
     ],
     "extractedComments": []
   },
-  "Contact": {
-    "translation": "Contact",
-    "origin": [
-      [
-        "hooks/useMenuItems.js",
-        21
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Contact us": {
-    "translation": "Ia legătura cu noi",
-    "origin": [
-      [
-        "containers/contact/HeroFragment.js",
-        13
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Designed by": {
-    "translation": "Proiectat de",
+  "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical": {
+    "translation": "Organizație neguvernamentală independentă neafiliată politic și apolitică",
     "origin": [
       [
         "components/Footer/index.js",
-        38
-      ],
-      [
-        "containers/about/AuthorsFragment.js",
-        23
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Donate": {
-    "translation": "Donează",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        57
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Find the nearest <0><1><2>testing center</2><3/></1></0>": {
-    "translation": "Găsește cel mai apropiat <0><1><2>centru de testare</2><3/></1></0>",
-    "origin": [
-      [
-        "containers/home/SearchFragment.js",
-        72
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Hotline": {
-    "translation": "Linia de asistență directă",
-    "origin": [
-      [
-        "containers/home/StatisticFragment.js",
         82
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Implemented by": {
-    "translation": "Implementat de",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        32
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Information being updated": {
-    "translation": "Informații în curs de actualizare",
-    "origin": [
-      [
-        "containers/home/StatisticFragment.js",
-        25
       ]
     ],
     "extractedComments": []
@@ -282,35 +94,27 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        74
+        47
       ]
     ],
     "extractedComments": []
   },
-  "Load more articles": {
-    "translation": "Încarcă mai multe articole",
+  "Integrated resource and demand management platform": {
+    "translation": "Platformă integrată de management de resurse și solicitări",
     "origin": [
       [
-        "components/LoadMoreArticlesLink/index.js",
-        8
+        "containers/home/HeroFragment.js",
+        13
       ]
     ],
     "extractedComments": []
   },
-  "Lorem ipsum dolor sit amet.": {
-    "translation": "Lorem ipsum dolor sit amet.",
+  "Legal Information": {
+    "translation": "Informații legale",
     "origin": [
       [
-        "containers/Terms/TermsFragment.js",
-        12
-      ],
-      [
-        "containers/Terms/TermsFragment.js",
-        36
-      ],
-      [
-        "containers/Terms/TermsFragment.js",
-        60
+        "components/Footer/index.js",
+        57
       ]
     ],
     "extractedComments": []
@@ -325,348 +129,102 @@
     ],
     "extractedComments": []
   },
-  "Mobile caravans": {
-    "translation": "Caravane mobile",
-    "origin": [
-      [
-        "containers/home/StatisticFragment.js",
-        74
-      ]
-    ],
-    "extractedComments": []
-  },
-  "No posts found": {
-    "translation": "Nu au fost găsite articole",
-    "origin": [
-      [
-        "components/BlogPreview/index.js",
-        29
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Opening hours": {
-    "translation": "Program",
+  "Name": {
+    "translation": "Nume",
     "origin": [
       [
         "components/CenterDetails/index.js",
-        26
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Other articles": {
-    "translation": "Alte articole",
-    "origin": [
-      [
-        "containers/blog-post/index.js",
         14
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Our address": {
-    "translation": "Adresa noastră",
-    "origin": [
-      [
-        "containers/contact/MapFragment.js",
-        16
       ]
     ],
     "extractedComments": []
   },
   "Phone number missing": {
-    "translation": "Număr telefon lipsă",
+    "translation": "Număr telefon indisponibil",
     "origin": [
       [
         "components/CenterDetails/index.js",
-        89
+        62
       ]
     ],
     "extractedComments": []
   },
-  "Privacy policy": {
-    "translation": "Politica de confidențialitate",
+  "Privacy Policy": {
+    "translation": "Politică de confidențialitate",
     "origin": [
       [
         "components/Footer/index.js",
-        64
+        65
       ]
     ],
     "extractedComments": []
   },
-  "Send": {
-    "translation": "Trimite",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        155
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Server unavailable": {
-    "translation": "Server indisponibil",
-    "origin": [
-      [
-        "containers/blog/Blog.js",
-        69
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Share:": {
-    "translation": "Distribuie pe:",
-    "origin": [
-      [
-        "components/Sharing/index.js",
-        21
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Support the project": {
-    "translation": "Susține proiect",
-    "origin": [
-      [
-        "hooks/useMenuItems.js",
-        25
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Terms & conditions": {
-    "translation": "Termeni şi condiţii",
+  "Project Developed In Program": {
+    "translation": "Proiect dezvoltat în programul",
     "origin": [
       [
         "components/Footer/index.js",
-        69
-      ],
-      [
-        "containers/Terms/HeroFragment.js",
-        11
+        15
       ]
     ],
     "extractedComments": []
   },
-  "Test types": {
-    "translation": "Tipuri teste",
+  "Source code": {
+    "translation": "Codul sursă",
     "origin": [
       [
-        "components/CenterDetails/index.js",
-        30
+        "components/Footer/index.js",
+        49
       ]
     ],
     "extractedComments": []
   },
-  "Testing centers": {
-    "translation": "Centre de testare",
-    "origin": [
-      [
-        "containers/home/StatisticFragment.js",
-        66
-      ]
-    ],
-    "extractedComments": []
-  },
-  "The form was submitted successfully.": {
-    "translation": "Formularul a fost trimis cu succes.",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        34
-      ]
-    ],
-    "extractedComments": []
-  },
-  "There was an error submitting the form. Please try again.": {
-    "translation": "Formularul nu a putut fi trimis. Te rog încearcă din nou.",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        37
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Website": {
-    "translation": "Pagină web",
-    "origin": [
-      [
-        "components/CenterDetails/index.js",
-        34
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Welcome!": {
-    "translation": "Bine ai venit!",
+  "Sprijin de Urgență is a project developed by Code for Romania for the Department of Emergency Situations for managing resources and needs in times of crisis.": {
+    "translation": "Sprijin de Urgență este un proiect dezvoltat de Code for Romania pentru Departamentul de Situații de Urgență pentru administrarea de resurse și nevoi în momente de criză.",
     "origin": [
       [
         "containers/home/HeroFragment.js",
-        13
+        23
       ]
     ],
     "extractedComments": []
   },
-  "Written by {authorFullName} • {0}": {
-    "translation": "Scris de {authorFullName} • {0}",
+  "Terms and Conditions": {
+    "translation": "Termeni și condiții",
     "origin": [
       [
-        "components/BlogItem/index.js",
-        21
+        "components/Footer/index.js",
+        73
       ]
     ],
     "extractedComments": []
   },
-  "about.first_paragraph": {
-    "translation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Diam donec adipiscing tristique risus nec feugiat in. Purus in mollis nunc sed id semper. Adipiscing at in tellus integer feugiat scelerisque. Vitae nunc sed velit dignissim sodales ut eu sem. Lacus viverra vitae congue eu consequat.",
+  "The Sprijin de Urgență Platform is an integrated resource management system that the civil society and all individuals and legal entities can bring together in order to help in critical situations. Depending on your current needs, choose one of the options below.": {
+    "translation": "Platforma Sprijin de Urgență este un sistem integrat de management al resurselor pe care societatea civilă și toate persoanele fizice și juridice le pot aduce împreună pentru a ajuta în situații critice. În funcție de nevoile curente, alege una dintre variantele de mai jos.",
     "origin": [
       [
-        "containers/about/FirstParagraphsFragment.js",
-        13
+        "containers/home/HeroFragment.js",
+        16
       ]
     ],
     "extractedComments": []
   },
-  "about.last_paragraph": {
-    "translation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Diam donec adipiscing tristique risus nec feugiat in. Purus in mollis nunc sed id semper. Adipiscing at in tellus integer feugiat scelerisque. Vitae nunc sed velit dignissim sodales ut eu sem. Lacus viverra vitae congue eu consequat. Lacus vestibulum sed arcu non odio euismod lacinia at. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Nam libero justo laoreet sit amet cursus. Augue ut lectus arcu bibendum at varius. Duis at tellus at urna condimentum. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Varius quam quisque id diam vel quam elementum. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. Viverra maecenas accumsan lacus vel.",
+  "Useful Links": {
+    "translation": "Linkuri utile",
     "origin": [
       [
-        "containers/about/ThirdParagraphFragment.js",
-        13
-      ]
-    ],
-    "extractedComments": []
-  },
-  "about.project_details": {
-    "translation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Diam donec adipiscing tristique risus nec feugiat in. Purus in mollis nunc sed id semper. Adipiscing at in tellus integer feugiat scelerisque. Vitae nunc sed velit dignissim sodales ut eu sem. Lacus viverra vitae congue eu consequat.",
-    "origin": [
-      [
-        "containers/about/TextBoxFragment.js",
-        14
-      ]
-    ],
-    "extractedComments": []
-  },
-  "about.second_paragraph": {
-    "translation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Diam donec adipiscing tristique risus nec feugiat in. Purus in mollis nunc sed id semper. Adipiscing at in tellus integer feugiat scelerisque. Vitae nunc sed velit dignissim sodales ut eu sem. Lacus viverra vitae congue eu consequat.",
-    "origin": [
-      [
-        "containers/about/FirstParagraphsFragment.js",
-        17
-      ]
-    ],
-    "extractedComments": []
-  },
-  "about.third_paragraph": {
-    "translation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Diam donec adipiscing tristique risus nec feugiat in. Purus in mollis nunc sed id semper. Adipiscing at in tellus integer feugiat scelerisque. Vitae nunc sed velit dignissim sodales ut eu sem. Lacus viverra vitae congue eu consequat.",
-    "origin": [
-      [
-        "containers/about/SecondParagraphFragment.js",
-        13
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.email": {
-    "translation": "Email:",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        83
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.gdpr_agreement": {
-    "translation": "Prin această bifă îți exprimi acordul ca datele furnizate de tine prin acest formular să fie procesate exclusiv in scopul de a încărca în platformă acest document și ca echipa MKBT să te contacteze doar în legătură cu această submisie. Aici puteți găsi <0>regulamentul nostru cu privire la prelucrarea datelor cu caracter personal</0>.",
-    "message": "By this check, you agree that the data provided by you through this form will be processed exclusively to upload this document on the platform and that the MKBT team will contact you only in connection with this submission. Here you can find <0>our regulations on the processing of personal data</0>.",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        118
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.message": {
-    "translation": "Mesajul tău:",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        108
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.name": {
-    "translation": "Nume complet:",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        74
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.phoneNumber": {
-    "translation": "Telefon (opțional):",
-    "origin": [
-      [
-        "containers/contact/FormFragment.js",
-        98
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.validation.captcha": {
-    "translation": "Captcha necesită verificare!",
-    "origin": [
-      [
-        "hooks/form/useFormValidationRules.js",
-        24
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.validation.email": {
-    "translation": "Adresa de e-mail nu este validă!",
-    "origin": [
-      [
-        "hooks/form/useFormValidationRules.js",
-        11
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.validation.gdpr": {
-    "translation": "Vă rugăm confirmați că ați citit și sunteți de acord cu regulamentul nostru cu privire la prelucrarea datelor cu caracter personal.",
-    "origin": [
-      [
-        "hooks/form/useFormValidationRules.js",
+        "components/Footer/index.js",
         26
       ]
     ],
     "extractedComments": []
   },
-  "form.validation.max": {
-    "translation": "Câmpul nu poate depăși {value} de caractere!",
-    "message": "Field cannot exceed a maximum of {value} characters!",
+  "done by": {
+    "translation": "realizat de",
     "origin": [
       [
-        "hooks/form/useFormValidationRules.js",
-        18
-      ]
-    ],
-    "extractedComments": []
-  },
-  "form.validation.required": {
-    "translation": "Câmpul nu poate fi lăsat gol!",
-    "origin": [
-      [
-        "hooks/form/useFormValidationRules.js",
-        13
+        "components/Hero/index.js",
+        26
       ]
     ],
     "extractedComments": []
@@ -676,7 +234,7 @@
     "origin": [
       [
         "components/CenterDetailsTitle/index.js",
-        50
+        38
       ]
     ],
     "extractedComments": []

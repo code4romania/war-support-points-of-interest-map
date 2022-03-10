@@ -1,76 +1,91 @@
 import React from 'react';
-import { Layout, Typography } from 'antd';
+import { Col, Layout, Row, Typography } from 'antd';
 import { Trans } from '@lingui/macro';
 import { Link } from 'react-router-dom';
-import FooterLogo from './FooterLogo';
+import CfRTaskForceLogo from '../../images/code_logo_colored.svg';
 
-// @TODO update logo for project owner
-// import Mkbt from '../../images/MKBT-logo-black.png';
-import CfR from '../../images/footer_CfR.svg';
-import Tfsg from '../../images/footer_tfsg.svg';
-
-import { useGlobalContext } from '../../context';
-
-const { Text } = Typography;
+const { Paragraph, Text } = Typography;
 const { Footer } = Layout;
 
 const FooterFragment = () => {
-  const { currentLanguage } = useGlobalContext();
-
   return (
     <Footer className="footer">
-      <div className="container">
-        <div className="footer__logos">
-          <FooterLogo
-            label={<Trans>A project by </Trans>}
-            // @TODO update logo and link for project owner
-            // href={`https://mkbt.ro/?lang=${currentLanguage}`}
-            // src={Mkbt}
-            height="70px"
-          />
-          <FooterLogo
-            label={<Trans>Implemented by </Trans>}
-            href={`https://tfsg.code4.ro/${currentLanguage}`}
-            src={Tfsg}
-            height="50px"
-          />
-          <FooterLogo
-            label={<Trans>Designed by </Trans>}
-            href={`https://code4.ro/${currentLanguage}`}
-            src={CfR}
-            height="50px"
-          />
-        </div>
-        <div className="footer__links">
-          <Link to="/despre">
-            <Text>
-              <Trans>About the project</Trans>
-            </Text>
-          </Link>
-          <a
-            href={`https://code4.ro/${currentLanguage === 'ro' ? 'ro/doneaza' : 'en/donate'}`}
-            target="_blank"
-            rel="noreferrer"
-            className="footer__donate"
-          >
-            <Text>
-              <Trans>Donate</Trans>
-            </Text>
-          </a>
-        </div>
-        <div className="footer__links">
-          <Link to="/politica-de-confidentialitate">
-            <Text>
-              <Trans>Privacy policy</Trans>
-            </Text>
-          </Link>
-          <Link to="/termeni-si-conditii">
-            <Text>
-              <Trans>Terms &amp; conditions</Trans>
-            </Text>
-          </Link>
-        </div>
-      </div>
+      <Row className="container developed" align="middle" type="flex" justify="end">
+        <Text>
+          <Trans>Project Developed In Program</Trans>
+        </Text>
+        <Link to={{ pathname: 'https://code4.ro/ro/code-for-romania-war-task-force' }}>
+          <img src={CfRTaskForceLogo} alt="Code 4 Romania logo" />
+        </Link>
+      </Row>
+      <Row className="links">
+        <Row className="container" type="flex">
+          <Col xs={24} md={12} xl={8}>
+            <ul>
+              <li>
+                <Trans>Useful Links</Trans>
+              </li>
+
+              <li>
+                <Link
+                  to={{ pathname: 'https://sprijindeurgenta.ro/about-project' }}
+                  target="_blank"
+                >
+                  <Trans>About the Project</Trans>
+                </Link>
+              </li>
+              <li>
+                <Link target="_blank" to={{ pathname: 'https://dopomoha.ro/' }}>
+                  Dopomoha.ro
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  to={{
+                    pathname: 'https://github.com/code4romania/war-harta-sprijin-de-urgenta',
+                  }}
+                >
+                  <Trans>Source code</Trans>
+                </Link>
+              </li>
+            </ul>
+          </Col>
+          <Col xs={24} md={12} xl={8}>
+            <ul>
+              <li>
+                <Trans>Legal Information</Trans>
+              </li>
+
+              <li>
+                <Link
+                  to={{ pathname: 'https://sprijindeurgenta.ro/confidentiality-policy' }}
+                  target="_blank"
+                >
+                  <Trans>Privacy Policy</Trans>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={{ pathname: 'https://sprijindeurgenta.ro/confidentiality-policy' }}
+                  target="_blank"
+                >
+                  <Trans>Terms and Conditions</Trans>
+                </Link>
+              </li>
+            </ul>
+            <br />
+          </Col>
+          <Col xs={24} md={24} xl={8}>
+            <Paragraph>&copy; {new Date().getFullYear()} Code for Romania</Paragraph>
+            <Paragraph>
+              <Trans>
+                Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical
+              </Trans>
+            </Paragraph>
+          </Col>
+        </Row>
+      </Row>
     </Footer>
   );
 };

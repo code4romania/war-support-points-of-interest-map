@@ -1,59 +1,45 @@
 .footer.ant-layout-footer {
-  background-color: #fff;
-  border-top: 14px solid $primary-color;
   width: 100%;
   position: static;
   bottom: 0;
-  padding: 50px 0;
+  padding: 0;
   margin-top: auto;
 }
 
-.footer__logos {
-  display: flex;
-  flex-direction: column;
-}
+.footer {
+  font-size: 16px;
+  .developed {
+    gap: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
 
-.footerLogo {
-  margin: 0 0 40px;
-}
-
-.footerLogo__label {
-  margin-bottom: 24px;
-}
-
-.footerLogo__image {
-  max-width: 100%;
-}
-
-.footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 16px;
-
-  a {
-    margin: 6px 12px;
-    text-decoration: underline;
-    color: $footer-text-color;
-  }
-}
-
-a.footer__donate {
-  font-weight: 700;
-  text-decoration-color: $green-color;
-
-  span {
-    color: $green-color;
-  }
-}
-
-@media (min-width: $breakpoint-tablet) {
-  .footer__logos {
-    flex-direction: row;
-    justify-content: center;
+    img {
+      height: 42px;
+    }
   }
 
-  .footerLogo {
-    margin: 0 30px;
+  .links {
+    background-color: rgb(0, 71, 143);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    .ant-typography,
+    ul {
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      & li:first-child {
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
   }
 }
