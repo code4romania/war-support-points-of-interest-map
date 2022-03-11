@@ -3,11 +3,7 @@ name: CD-prod
 
 on:
   push:
-    branches: [ main ]
-    
-defaults:
-  run:
-    working-directory: client  
+    branches: [ main ] 
 
 jobs:
   build:
