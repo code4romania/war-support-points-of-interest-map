@@ -66,7 +66,7 @@ export const SearchMapFragment = () => {
         <Trans>
           The map is continuously updated. If you know of any official collecting center that we did
           not add to the map, please send us an email with its details at{' '}
-          {<a href="mailto:contact@code4.ro">contact@code4.ro</a>}.
+          {<a href="mailto:dopomoha@code4.ro">dopomoha@code4.ro</a>}.
         </Trans>
       </Paragraph>
     </>

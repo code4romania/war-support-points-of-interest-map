@@ -219,8 +219,8 @@
     ],
     "extractedComments": []
   },
-  "The map is continuously updated. If you know of any official collecting center that we did not add to the map, please send us an email with its details at <0>contact@code4.ro</0>.": {
-    "translation": "Карта центрів збору постійно оновлюється. Якщо Ви знаєте про офіційний центр збору у Вашому місті, який ми не вказали на карті, надішліть нам електронного листа з детальною інформацією про нього на <0>contact@code4.ro</0>.",
+  "The map is continuously updated. If you know of any official collecting center that we did not add to the map, please send us an email with its details at <0>dopomoha@code4.ro</0>.": {
+    "translation": "Карта центрів збору постійно оновлюється. Якщо Ви знаєте про офіційний центр збору у Вашому місті, який ми не вказали на карті, надішліть нам електронного листа з детальною інформацією про нього на <0>dopomoha@code4.ro</0>.",
     "origin": [
       [
         "containers/home/SearchMapFragment.js",
