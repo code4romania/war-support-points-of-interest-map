@@ -1,10 +1,10 @@
-# HIV Testing Centers
+# Hartă Sprijin de Urgență
 
 [![GitHub contributors][ico-contributors]][link-contributors]
 [![GitHub last commit][ico-last-commit]][link-last-commit]
 [![License: MPL 2.0][ico-license]][link-license]
 
-The application helps users more easily locate health centers in Romania where they can get tested for HIV.
+The application helps people more easily locate collection centers in Romania where they can donate for the refugees of the Russian invasion of Ukraine.
 
 [Contributing](#contributing) | [Built with](#built-with) | [Deployment](#deployment) | [Feedback](#feedback) | [License](#license) | [About Code for Romania](#about-code-for-romania)
 
@@ -20,27 +20,15 @@ If you would like to suggest new functionality, open an Issue and mark it as a _
 
 ### Programming languages
 
-[Python 3.9](https://www.python.org)
-
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Frontend framework
 
 [React](https://reactjs.org/)
 
-### Backend framework
-
-[Django 3.2 LTS](https://www.djangoproject.com)
-
 ### Package managers
 
 **Frontend:** [NPM](https://www.npmjs.com/)
-
-**Backend:** [pip](https://pip.pypa.io/)
-
-### Database technology & provider
-
-[PostgreSQL 14](https://www.postgresql.org/docs/14/index.html)
 
 ## Deployment
 
@@ -91,12 +79,12 @@ Started in 2016, Code for Romania is a civic tech NGO, official member of the Co
 Last, but not least, we rely on donations to ensure the infrastructure, logistics and management of our community that is widely spread across 11 timezones, coding for social change to make Romania and the world a better place. If you want to support us, [you can do it here][link-donate].
 
 
-[ico-contributors]: https://img.shields.io/github/contributors/code4romania/centre_testare_HIV.svg?style=for-the-badge
-[ico-last-commit]: https://img.shields.io/github/last-commit/code4romania/centre_testare_HIV.svg?style=for-the-badge
+[ico-contributors]: https://img.shields.io/github/contributors/code4romania/war-harta-sprijin-de-urgenta.svg?style=for-the-badge
+[ico-last-commit]: https://img.shields.io/github/last-commit/code4romania/war-harta-sprijin-de-urgenta.svg?style=for-the-badge
 [ico-license]: https://img.shields.io/badge/license-MPL%202.0-brightgreen.svg?style=for-the-badge
 
-[link-contributors]: https://github.com/code4romania/centre_testare_HIV/graphs/contributors
-[link-last-commit]: https://github.com/code4romania/centre_testare_HIV/commits/develop
+[link-contributors]: https://github.com/code4romania/war-harta-sprijin-de-urgenta/graphs/contributors
+[link-last-commit]: https://github.com/code4romania/war-harta-sprijin-de-urgenta/commits/develop
 [link-license]: https://opensource.org/licenses/MPL-2.0
 [link-contributing]: https://github.com/code4romania/.github/blob/main/CONTRIBUTING.md
 
