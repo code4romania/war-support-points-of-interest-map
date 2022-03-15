@@ -51,7 +51,7 @@ export const Header = () => {
         <div className="container">
           <div className="App-logo">
             <Link to="/">
-              <img src={logo} alt="Sprijin de urgenta logo" />
+              <img src={logo} alt="Dopomoha logo" />
             </Link>
           </div>
 

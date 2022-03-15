@@ -7,7 +7,7 @@
   box-shadow: rgb(0 0 0 / 30%) 0px 4px 6px -1px;
 
   &.ant-card {
-    border: 1px solid rgba(0, 74, 173, 0.2);
+    border: 1px solid $secondary-main;
     border-radius: 10px;
     font-size: 16px;
     line-height: 24px;
@@ -77,6 +77,9 @@ center-details-title__text {
 }
 
 .call-center-btn {
+  background-color: $secondary-main;
+  border-color: $secondary-main;
+  color: #fff;
   border-radius: 8px;
   border-width: 2px;
   margin-top: auto;

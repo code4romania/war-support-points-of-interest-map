@@ -1,18 +1,42 @@
 import React, { useCallback, useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { Typography } from 'antd';
+import { Tabs, Typography } from 'antd';
 import { MapFragment } from './MapFragment';
 import { SearchFragment } from './SearchFragment';
 import { useGeoCodeSearch } from '../../hooks/map/useGeoCodeSearch';
 import { zoomToNearestPointToPosition } from '../../utils';
 import { useMap, useSelectedCenterPk } from '../../store';
 import { useClearSelectedMarkers } from '../../hooks/map/useClearSelectedMarkers';
-import { helpCenters } from '../../data';
+import { policeStations, medicalClinics, banks } from '../../data';
 
 const { Paragraph } = Typography;
+const { TabPane } = Tabs;
+
+const tabs = [
+  {
+    key: 'police',
+    label: <Trans>Police</Trans>,
+  },
+  {
+    key: 'medical',
+    label: <Trans>Medical clinics</Trans>,
+  },
+  {
+    key: 'bank',
+    label: <Trans>Banks</Trans>,
+  },
+];
+
+const searchTitles = {
+  police: <Trans>See here where your nearest police station is:</Trans>,
+  medical: <Trans>See here where your nearest medical clinic is:</Trans>,
+  bank: <Trans>See here where your nearest bank is:</Trans>,
+};
 
 export const SearchMapFragment = () => {
   const [isLoadingLocation, setIsLoadingLocation] = useState(false);
+  const [points, setPoints] = useState(policeStations);
+  const [searchTitle, setSearchTitle] = useState(searchTitles.police);
 
   const { map, mapPlatform } = useMap();
 
@@ -27,7 +51,7 @@ export const SearchMapFragment = () => {
       const [firstItem] = items;
       const { position } = firstItem;
 
-      zoomToNearestPointToPosition(map, position, helpCenters);
+      zoomToNearestPointToPosition(map, position, points);
     },
   });
 
@@ -45,13 +69,39 @@ export const SearchMapFragment = () => {
     setIsLoadingLocation(true);
     navigator.geolocation.getCurrentPosition(({ coords }) => {
       setIsLoadingLocation(false);
-      zoomToNearestPointToPosition(
-        map,
-        { lat: coords.latitude, lng: coords.longitude },
-        helpCenters,
-      );
+      zoomToNearestPointToPosition(map, { lat: coords.latitude, lng: coords.longitude }, points);
     });
-  }, [clearSelectedMarkers, map]);
+  }, [clearSelectedMarkers, map, points]);
+
+  const onTabChangeHandler = useCallback(
+    (key) => {
+      clearSelectedCenterPk();
+      map
+        .getLayers()
+        .asArray()
+        .forEach((layer) => {
+          map.removeLayer(layer);
+        });
+
+      switch (key) {
+        case 'police':
+          setPoints(policeStations);
+          setSearchTitle(searchTitles.police);
+          break;
+        case 'medical':
+          setPoints(medicalClinics);
+          setSearchTitle(searchTitles.medical);
+          break;
+        case 'bank':
+          setPoints(banks);
+          setSearchTitle(searchTitles.bank);
+          break;
+        default:
+          break;
+      }
+    },
+    [clearSelectedCenterPk, map],
+  );
 
   return (
     <>
@@ -59,8 +109,14 @@ export const SearchMapFragment = () => {
         isLoading={isLoadingLocation}
         onSearch={onSearchHandler}
         onSelectResult={onSelectResultHandler}
+        searchTitle={searchTitle}
       />
-      <MapFragment />
+      <Tabs type="card" onChange={onTabChangeHandler}>
+        {tabs.map(({ key, label }) => (
+          <TabPane tab={label} key={key} />
+        ))}
+      </Tabs>
+      <MapFragment points={points} />
       <br />
       <Paragraph>
         <Trans>
