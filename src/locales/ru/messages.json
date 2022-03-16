@@ -19,6 +19,16 @@
     ],
     "extractedComments": []
   },
+  "A Code for Romania solution": {
+    "translation": "Продукт Code for Romania",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        23
+      ]
+    ],
+    "extractedComments": []
+  },
   "A Code for Romania solution. <0>Find out more.</0>": {
     "translation": "Решение Кода Для Румынии. <0>Подробнее.</0>",
     "origin": [
@@ -34,17 +44,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        18
-      ]
-    ],
-    "extractedComments": []
-  },
-  "About the Project": {
-    "translation": "О проекте",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        34
+        21
       ]
     ],
     "extractedComments": []
@@ -59,12 +59,12 @@
     ],
     "extractedComments": []
   },
-  "Call center": {
-    "translation": "Позвонить в центр",
+  "Banks": {
+    "translation": "банки",
     "origin": [
       [
-        "components/CenterDetails/index.js",
-        79
+        "containers/home/SearchMapFragment.js",
+        26
       ]
     ],
     "extractedComments": []
@@ -84,17 +84,17 @@
     "origin": [
       [
         "components/Hero/index.js",
-        38
+        50
       ]
     ],
     "extractedComments": []
   },
-  "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical": {
-    "translation": "Независимая неправительственная организация, политически неаффилированная и аполитичная",
+  "If you'd like to report any mistakes, inconsistencies or omissions please let us know by writing an e-mail to <0>dopomoha@code4.ro</0>. We'll do our best to integrate your feedback.": {
+    "translation": "Если вы хотите сообщить о каких-либо ошибках, несоответствиях или упущениях, сообщите нам об этом по электронной почте <0>dopomoha@code4.ro</0>. Мы сделаем все возможное, чтобы интегрировать ваши отзывы.",
     "origin": [
       [
         "components/Footer/index.js",
-        82
+        14
       ]
     ],
     "extractedComments": []
@@ -119,22 +119,22 @@
     ],
     "extractedComments": []
   },
-  "Legal Information": {
-    "translation": "Юридическая информация",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        57
-      ]
-    ],
-    "extractedComments": []
-  },
   "Map loading…": {
     "translation": "Загрузка картыloading…",
     "origin": [
       [
         "components/MapPlaceholder/index.js",
         14
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Medical clinics": {
+    "translation": "Медицинские клиники",
+    "origin": [
+      [
+        "containers/home/SearchMapFragment.js",
+        22
       ]
     ],
     "extractedComments": []
@@ -154,57 +154,47 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        66
+        64
       ]
     ],
     "extractedComments": []
   },
-  "Privacy Policy": {
-    "translation": "Политика конфиденциальности",
+  "Police": {
+    "translation": "Полиция",
     "origin": [
       [
-        "components/Footer/index.js",
-        65
+        "containers/home/SearchMapFragment.js",
+        18
       ]
     ],
     "extractedComments": []
   },
-  "Project Developed In Program": {
-    "translation": "Проект разработан в программе",
+  "See here where your nearest bank is:": {
+    "translation": "Посмотрите здесь, где находится ближайший к вам банк:",
     "origin": [
       [
-        "components/Footer/index.js",
-        15
+        "containers/home/SearchMapFragment.js",
+        33
       ]
     ],
     "extractedComments": []
   },
-  "See here where your nearest collection center is:": {
-    "translation": "Посмотрите здесь, где находится ближайший к вам центр сбора:",
+  "See here where your nearest medical clinic is:": {
+    "translation": "Посмотрите здесь, где находится ближайшая к вам медицинская клиника:",
     "origin": [
       [
-        "containers/home/SearchFragment.js",
-        97
+        "containers/home/SearchMapFragment.js",
+        32
       ]
     ],
     "extractedComments": []
   },
-  "Source code": {
-    "translation": "Исходный код",
+  "See here where your nearest police station is:": {
+    "translation": "Посмотрите здесь, где находится ближайший к вам полицейский участок:",
     "origin": [
       [
-        "components/Footer/index.js",
-        49
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Terms and Conditions": {
-    "translation": "Условия и положения",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        73
+        "containers/home/SearchMapFragment.js",
+        31
       ]
     ],
     "extractedComments": []
@@ -224,17 +214,7 @@
     "origin": [
       [
         "containers/home/SearchMapFragment.js",
-        66
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Useful Links": {
-    "translation": "Полезные ссылки",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        26
+        122
       ]
     ],
     "extractedComments": []
@@ -244,7 +224,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        30
+        42
       ]
     ],
     "extractedComments": []

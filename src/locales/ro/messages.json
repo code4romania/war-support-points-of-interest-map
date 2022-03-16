@@ -19,6 +19,16 @@
     ],
     "extractedComments": []
   },
+  "A Code for Romania solution": {
+    "translation": "O soluție Code for Romania",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        23
+      ]
+    ],
+    "extractedComments": []
+  },
   "A Code for Romania solution. <0>Find out more.</0>": {
     "translation": "O soluție Code for Romania. <0>Află mai multe</0>",
     "origin": [
@@ -34,17 +44,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        18
-      ]
-    ],
-    "extractedComments": []
-  },
-  "About the Project": {
-    "translation": "Despre proiect",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        34
+        21
       ]
     ],
     "extractedComments": []
@@ -59,12 +59,12 @@
     ],
     "extractedComments": []
   },
-  "Call center": {
-    "translation": "Sună la centru",
+  "Banks": {
+    "translation": "Bănci",
     "origin": [
       [
-        "components/CenterDetails/index.js",
-        79
+        "containers/home/SearchMapFragment.js",
+        26
       ]
     ],
     "extractedComments": []
@@ -84,17 +84,17 @@
     "origin": [
       [
         "components/Hero/index.js",
-        38
+        50
       ]
     ],
     "extractedComments": []
   },
-  "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical": {
-    "translation": "Organizație neguvernamentală independentă neafiliată politic și apolitică",
+  "If you'd like to report any mistakes, inconsistencies or omissions please let us know by writing an e-mail to <0>dopomoha@code4.ro</0>. We'll do our best to integrate your feedback.": {
+    "translation": "Dacă ați identificat neconcordanțe în conținut sau aveți nelămuriri scrieți-ne la e-mailul <0>dopomoha@code4.ro</0>. Vom face tot posibilul să integrăm feedbackul dumneavoastră.",
     "origin": [
       [
         "components/Footer/index.js",
-        82
+        14
       ]
     ],
     "extractedComments": []
@@ -119,22 +119,22 @@
     ],
     "extractedComments": []
   },
-  "Legal Information": {
-    "translation": "Informații legale",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        57
-      ]
-    ],
-    "extractedComments": []
-  },
   "Map loading…": {
     "translation": "Harta se încarcă…",
     "origin": [
       [
         "components/MapPlaceholder/index.js",
         14
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Medical clinics": {
+    "translation": "Clinici medicale",
+    "origin": [
+      [
+        "containers/home/SearchMapFragment.js",
+        22
       ]
     ],
     "extractedComments": []
@@ -154,57 +154,47 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        66
+        64
       ]
     ],
     "extractedComments": []
   },
-  "Privacy Policy": {
-    "translation": "Politică de confidențialitate",
+  "Police": {
+    "translation": "Poliție",
     "origin": [
       [
-        "components/Footer/index.js",
-        65
+        "containers/home/SearchMapFragment.js",
+        18
       ]
     ],
     "extractedComments": []
   },
-  "Project Developed In Program": {
-    "translation": "Proiect dezvoltat în programul",
+  "See here where your nearest bank is:": {
+    "translation": "Vezi aici unde este cea mai apropiată bancă de tine:",
     "origin": [
       [
-        "components/Footer/index.js",
-        15
+        "containers/home/SearchMapFragment.js",
+        33
       ]
     ],
     "extractedComments": []
   },
-  "See here where your nearest collection center is:": {
-    "translation": "Vezi aici unde este cel mai apropiat centru de colectare de tine:",
+  "See here where your nearest medical clinic is:": {
+    "translation": "Vezi aici unde este cea mai apropiată clinică medicală de tine:",
     "origin": [
       [
-        "containers/home/SearchFragment.js",
-        97
+        "containers/home/SearchMapFragment.js",
+        32
       ]
     ],
     "extractedComments": []
   },
-  "Source code": {
-    "translation": "Codul sursă",
+  "See here where your nearest police station is:": {
+    "translation": "Vezi aici unde este cea mai apropiată secție de poliție de tine:",
     "origin": [
       [
-        "components/Footer/index.js",
-        49
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Terms and Conditions": {
-    "translation": "Termeni și condiții",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        73
+        "containers/home/SearchMapFragment.js",
+        31
       ]
     ],
     "extractedComments": []
@@ -224,17 +214,7 @@
     "origin": [
       [
         "containers/home/SearchMapFragment.js",
-        66
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Useful Links": {
-    "translation": "Linkuri utile",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        26
+        122
       ]
     ],
     "extractedComments": []
@@ -244,7 +224,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        30
+        42
       ]
     ],
     "extractedComments": []
