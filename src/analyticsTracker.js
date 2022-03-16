@@ -1,10 +1,10 @@
 import ReactGA from 'react-ga';
 
 export const initializeGA = () => {
-  if (document.location.hostname !== 'harta.sprijindeurgenta.ro') {
+  if (document.location.hostname !== 'harta.dopomoha.ro') {
     return;
   }
-  ReactGA.initialize('G-W7RC2D7RJP');
+  ReactGA.initialize('G-Z11NZKSZQ7');
 };
 
 export const logPageView = (history) => {
