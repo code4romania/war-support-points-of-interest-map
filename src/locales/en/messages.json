@@ -19,6 +19,16 @@
     ],
     "extractedComments": []
   },
+  "A Code for Romania solution": {
+    "translation": "A Code for Romania solution",
+    "origin": [
+      [
+        "components/Footer/index.js",
+        23
+      ]
+    ],
+    "extractedComments": []
+  },
   "A Code for Romania solution. <0>Find out more.</0>": {
     "translation": "A Code for Romania solution. <0>Find out more.</0>",
     "origin": [
@@ -34,22 +44,13 @@
     "origin": [
       [
         "components/Hero/index.js",
-        18
-      ]
-    ],
-    "extractedComments": []
-  },
-  "About the Project": {
-    "translation": "About the Project",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        34
+        21
       ]
     ],
     "extractedComments": []
   },
   "Back to home page": {
+    "translation": "Back to home page",
     "origin": [
       [
         "containers/404/HeroFragment.js",
@@ -58,12 +59,12 @@
     ],
     "extractedComments": []
   },
-  "Call center": {
-    "translation": "Call center",
+  "Banks": {
+    "translation": "Banks",
     "origin": [
       [
-        "components/CenterDetails/index.js",
-        79
+        "containers/home/SearchMapFragment.js",
+        26
       ]
     ],
     "extractedComments": []
@@ -83,22 +84,23 @@
     "origin": [
       [
         "components/Hero/index.js",
-        38
+        50
       ]
     ],
     "extractedComments": []
   },
-  "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical": {
-    "translation": "Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical",
+  "If you'd like to report any mistakes, inconsistencies or omissions please let us know by writing an e-mail to <0>dopomoha@code4.ro</0>. We'll do our best to integrate your feedback.": {
+    "translation": "If you'd like to report any mistakes, inconsistencies or omissions please let us know by writing an e-mail to <0>dopomoha@code4.ro</0>. We'll do our best to integrate your feedback.",
     "origin": [
       [
         "components/Footer/index.js",
-        82
+        14
       ]
     ],
     "extractedComments": []
   },
   "Information missing": {
+    "translation": "Information missing",
     "origin": [
       [
         "components/CenterDetails/index.js",
@@ -117,22 +119,22 @@
     ],
     "extractedComments": []
   },
-  "Legal Information": {
-    "translation": "Legal Information",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        57
-      ]
-    ],
-    "extractedComments": []
-  },
   "Map loading…": {
     "translation": "Map loading…",
     "origin": [
       [
         "components/MapPlaceholder/index.js",
         14
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Medical clinics": {
+    "translation": "Medical clinics",
+    "origin": [
+      [
+        "containers/home/SearchMapFragment.js",
+        22
       ]
     ],
     "extractedComments": []
@@ -152,57 +154,47 @@
     "origin": [
       [
         "components/CenterDetails/index.js",
-        66
+        64
       ]
     ],
     "extractedComments": []
   },
-  "Privacy Policy": {
-    "translation": "Privacy Policy",
+  "Police": {
+    "translation": "Police",
     "origin": [
       [
-        "components/Footer/index.js",
-        65
+        "containers/home/SearchMapFragment.js",
+        18
       ]
     ],
     "extractedComments": []
   },
-  "Project Developed In Program": {
-    "translation": "Project Developed In Program",
+  "See here where your nearest bank is:": {
+    "translation": "See here where your nearest bank is:",
     "origin": [
       [
-        "components/Footer/index.js",
-        15
+        "containers/home/SearchMapFragment.js",
+        33
       ]
     ],
     "extractedComments": []
   },
-  "See here where your nearest collection center is:": {
-    "translation": "See here where your nearest collection center is:",
+  "See here where your nearest medical clinic is:": {
+    "translation": "See here where your nearest medical clinic is:",
     "origin": [
       [
-        "containers/home/SearchFragment.js",
-        97
+        "containers/home/SearchMapFragment.js",
+        32
       ]
     ],
     "extractedComments": []
   },
-  "Source code": {
-    "translation": "Source code",
+  "See here where your nearest police station is:": {
+    "translation": "See here where your nearest police station is:",
     "origin": [
       [
-        "components/Footer/index.js",
-        49
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Terms and Conditions": {
-    "translation": "Terms and Conditions",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        73
+        "containers/home/SearchMapFragment.js",
+        31
       ]
     ],
     "extractedComments": []
@@ -222,17 +214,7 @@
     "origin": [
       [
         "containers/home/SearchMapFragment.js",
-        66
-      ]
-    ],
-    "extractedComments": []
-  },
-  "Useful Links": {
-    "translation": "Useful Links",
-    "origin": [
-      [
-        "components/Footer/index.js",
-        26
+        122
       ]
     ],
     "extractedComments": []
@@ -242,7 +224,7 @@
     "origin": [
       [
         "components/Hero/index.js",
-        30
+        42
       ]
     ],
     "extractedComments": []

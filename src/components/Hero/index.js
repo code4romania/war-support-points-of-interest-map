@@ -7,6 +7,9 @@ import GovLogo from '../../images/gov_ro.png';
 import GovMobileLogo from '../../images/gov_ro_mobile.svg';
 import DsuLogo from '../../images/dsu_logo.svg';
 import CfRLogo from '../../images/footer_CfR.svg';
+import UnMigrationLogo from '../../images/un-migration-ro.png';
+import CnrrLogo from '../../images/cnrr.png';
+import UnhcrLogo from '../../images/unhcr.svg';
 
 const { Title, Text } = Typography;
 
@@ -26,11 +29,20 @@ export const Hero = ({ heroImage, title, subTitle, children, titleLevel }) => {
         <Link to={{ pathname: 'http://www.dsu.mai.gov.ro/' }} target="_blank">
           <img src={DsuLogo} alt="DSU Logo" />
         </Link>
+        <Link to={{ pathname: 'https://romania.iom.int/' }} target="_blank">
+          <img src={UnMigrationLogo} alt="IOM Logo" />
+        </Link>
+        <Link to={{ pathname: 'https://www.cnrr.ro/index.php/ro/' }} target="_blank">
+          <img src={CnrrLogo} alt="CNRR Logo" />
+        </Link>
+        <Link to={{ pathname: 'https://help.unhcr.org/romania/' }} target="_blank">
+          <img src={UnhcrLogo} alt="UNHCR Logo" />
+        </Link>
         <Text>
           <Trans>done by</Trans>
         </Text>
         <Link to={{ pathname: 'https://www.code4.ro/' }} target="_blank">
-          <img src={CfRLogo} alt="DSU Logo" />
+          <img src={CfRLogo} alt="CfR Logo" />
         </Link>
       </Row>
       <Row className="help">

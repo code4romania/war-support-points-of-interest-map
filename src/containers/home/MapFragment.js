@@ -6,22 +6,21 @@ import { useCreateMap } from '../../hooks/map/useCreateMap';
 import { useMap, useSelectedCenterPk } from '../../store';
 import { useClearSelectedMarkers } from '../../hooks/map/useClearSelectedMarkers';
 import { useCreateMapClusters } from '../../hooks/map/useCreateMapClusters';
-import { helpCenters } from '../../data';
 
-export const MapFragment = () => {
+export const MapFragment = ({ points }) => {
   const mapRef = useRef(null);
 
   useCreateMap(mapRef);
   const { map, isMapLoading } = useMap();
   const createMapClusters = useCreateMapClusters();
-  createMapClusters(helpCenters);
+  createMapClusters(points);
 
   const { selectedCenterPk, clearSelectedCenterPk } = useSelectedCenterPk();
   const clearSelectedMarkers = useClearSelectedMarkers();
 
   const details = useMemo(
-    () => helpCenters.find(({ pk }) => pk === selectedCenterPk),
-    [selectedCenterPk],
+    () => points.find(({ pk }) => pk === selectedCenterPk),
+    [points, selectedCenterPk],
   );
 
   const showRightPanel = Boolean(selectedCenterPk);

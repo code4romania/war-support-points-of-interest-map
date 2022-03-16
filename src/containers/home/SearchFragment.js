@@ -1,8 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { AutoComplete, Col, Icon, Input, Row, Spin, Typography } from 'antd';
-import { Trans } from '@lingui/macro';
 import { debounce } from 'lodash';
-import { bool, func } from 'prop-types';
+import { bool, func, string } from 'prop-types';
 
 import { useGlobalContext } from '../../context';
 
@@ -18,7 +17,7 @@ const Suffix = ({ input, loading }) => {
   return <span />;
 };
 
-export const SearchFragment = ({ isLoading, onSearch, onSelectResult }) => {
+export const SearchFragment = ({ isLoading, onSearch, onSelectResult, searchTitle }) => {
   const { currentLanguage } = useGlobalContext();
 
   const [searchInput, setSearchInput] = useState('');
@@ -93,9 +92,7 @@ export const SearchFragment = ({ isLoading, onSearch, onSelectResult }) => {
       style={{ marginTop: '2rem', marginBottom: '2rem', textAlign: 'center' }}
     >
       <Col sm={26} md={16}>
-        <Title level={3}>
-          <Trans>See here where your nearest collection center is:</Trans>
-        </Title>
+        <Title level={3}>{searchTitle}</Title>
 
         <AutoComplete
           className="search-box"
@@ -123,6 +120,7 @@ SearchFragment.propTypes = {
   isLoading: bool,
   onSearch: func.isRequired,
   onSelectResult: func.isRequired,
+  searchTitle: string.isRequired,
 };
 
 export default { SearchFragment };

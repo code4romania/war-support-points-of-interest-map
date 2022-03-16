@@ -17,11 +17,11 @@
     display: inline-flex;
     height: $header-height;
     align-items: center;
-    flex-basis: 170px;
+    flex-basis: 256px;
     flex-grow: 0;
 
     img {
-      height: 42px;
+      height: 64px;
       width: 100%;
     }
   }

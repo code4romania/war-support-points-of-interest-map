@@ -3,7 +3,7 @@ import { Button, Card, Col, Icon, Row, Descriptions, Empty } from 'antd';
 import { Trans } from '@lingui/macro';
 import { CenterDetailsTitle } from '../CenterDetailsTitle';
 
-export const CenterDetails = ({ onClose, isLoading, details, onClick }) => {
+export const CenterDetails = ({ onClose, isLoading, details }) => {
   const detailsItems = useMemo(() => {
     if (!details) {
       return [];
@@ -52,34 +52,17 @@ export const CenterDetails = ({ onClose, isLoading, details, onClick }) => {
         </Row>
       )}
 
-      {details?.phoneNumber ? (
-        <Button
-          className="call-center-btn"
-          icon="phone"
-          size="large"
-          type="primary"
-          ghost
-          block
-          disabled={!hasDetailItems || !details?.phoneNumber}
-          href={`tel:${details?.phoneNumber}`}
-        >
-          <span>{details?.phoneNumber ?? <Trans>Phone number missing</Trans>}</span>
-        </Button>
-      ) : (
-        <Button
-          className="call-center-btn"
-          size="large"
-          type="primary"
-          ghost
-          block
-          disabled={!hasDetailItems || !details?.phoneNumber}
-          onClick={onClick}
-        >
-          <span>
-            <Trans>Call center</Trans>
-          </span>
-        </Button>
-      )}
+      <Button
+        className="call-center-btn"
+        icon="phone"
+        size="large"
+        type="primary"
+        block
+        disabled={!hasDetailItems || !details?.phoneNumber}
+        href={`tel:${details?.phoneNumber}`}
+      >
+        <span>{details?.phoneNumber ?? <Trans>Phone number missing</Trans>}</span>
+      </Button>
     </Card>
   );
 };

@@ -1,90 +1,27 @@
 import React from 'react';
-import { Col, Layout, Row, Typography } from 'antd';
+import { Col, Divider, Layout, Row, Typography } from 'antd';
 import { Trans } from '@lingui/macro';
-import { Link } from 'react-router-dom';
-import CfRTaskForceLogo from '../../images/code_logo_colored.svg';
 
-const { Paragraph, Text } = Typography;
+const { Paragraph } = Typography;
 const { Footer } = Layout;
 
 const FooterFragment = () => {
   return (
     <Footer className="footer">
-      <Row className="container developed" align="middle" type="flex" justify="end">
-        <Text>
-          <Trans>Project Developed In Program</Trans>
-        </Text>
-        <Link to={{ pathname: 'https://code4.ro/ro/code-for-romania-war-task-force' }}>
-          <img src={CfRTaskForceLogo} alt="Code 4 Romania logo" />
-        </Link>
-      </Row>
-      <Row className="links">
-        <Row className="container" type="flex">
-          <Col xs={24} md={12} xl={8}>
-            <ul>
-              <li>
-                <Trans>Useful Links</Trans>
-              </li>
-
-              <li>
-                <Link
-                  to={{ pathname: 'https://sprijindeurgenta.ro/about-project' }}
-                  target="_blank"
-                >
-                  <Trans>About the Project</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link target="_blank" to={{ pathname: 'https://dopomoha.ro/' }}>
-                  Dopomoha.ro
-                </Link>
-              </li>
-              <li>
-                <Link
-                  target="_blank"
-                  to={{
-                    pathname: 'https://github.com/code4romania/war-harta-sprijin-de-urgenta',
-                  }}
-                >
-                  <Trans>Source code</Trans>
-                </Link>
-              </li>
-            </ul>
-          </Col>
-          <Col xs={24} md={12} xl={8}>
-            <ul>
-              <li>
-                <Trans>Legal Information</Trans>
-              </li>
-
-              <li>
-                <Link
-                  to={{ pathname: 'https://sprijindeurgenta.ro/confidentiality-policy' }}
-                  target="_blank"
-                >
-                  <Trans>Privacy Policy</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={{ pathname: 'https://sprijindeurgenta.ro/confidentiality-policy' }}
-                  target="_blank"
-                >
-                  <Trans>Terms and Conditions</Trans>
-                </Link>
-              </li>
-            </ul>
-            <br />
-          </Col>
-          <Col xs={24} md={24} xl={8}>
-            <Paragraph>&copy; {new Date().getFullYear()} Code for Romania</Paragraph>
-            <Paragraph>
-              <Trans>
-                Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical
-              </Trans>
-            </Paragraph>
-          </Col>
-        </Row>
+      <Row className="container" align="middle" type="flex">
+        <Col xs={24} lg={14}>
+          <Paragraph>
+            <Trans>
+              If you'd like to report any mistakes, inconsistencies or omissions please let us know
+              by writing an e-mail to <a href="mailto:dopomoha@code4.ro">dopomoha@code4.ro</a>.
+              We'll do our best to integrate your feedback.
+            </Trans>
+          </Paragraph>
+        </Col>
+        <Divider />
+        <Paragraph type="secondary">
+          &copy; {new Date().getFullYear()} Dopomoha. <Trans>A Code for Romania solution</Trans>
+        </Paragraph>
       </Row>
     </Footer>
   );
