@@ -90,3 +90,5 @@ Last, but not least, we rely on donations to ensure the infrastructure, logistic
 
 [link-code4]: https://code4.ro/en/
 [link-donate]: https://code4.ro/en/donate/
+
+[![Vercel Logo](/src/images/powered-by-vercel.svg)](https://vercel.com/?utm_source=war-taskforce&utm_campaign=oss)
