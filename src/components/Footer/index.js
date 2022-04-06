@@ -3,6 +3,7 @@ import { Col, Layout, Row, Typography } from 'antd';
 import { Trans } from '@lingui/macro';
 import { Link } from 'react-router-dom';
 import CfRTaskForceLogo from '../../images/code_logo_colored.svg';
+import VercelLogo from '../../images/powered-by-vercel.svg';
 
 const { Paragraph, Text } = Typography;
 const { Footer } = Layout;
@@ -43,7 +44,7 @@ const FooterFragment = () => {
                 <Link
                   target="_blank"
                   to={{
-                    pathname: 'https://github.com/code4romania/war-harta-sprijin-de-urgenta',
+                    pathname: 'https://github.com/code4romania/war-support-points-of-interest-map',
                   }}
                 >
                   <Trans>Source code</Trans>
@@ -83,6 +84,14 @@ const FooterFragment = () => {
                 Independent Non-Governmental Organization, Politically Unaffiliated and Apolitical
               </Trans>
             </Paragraph>
+            <Link
+              to={{
+                pathname: 'https://vercel.com/?utm_source=war-taskforce&utm_campaign=oss',
+              }}
+              target="_blank"
+            >
+              <img src={VercelLogo} alt="Vercel logo" />
+            </Link>
           </Col>
         </Row>
       </Row>
